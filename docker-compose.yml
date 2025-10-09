@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rio-sur-adventure-web
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      # If you need environment variables for your AI features,
+      # you can add them here, for example:
+      # - GEMINI_API_KEY=your_api_key_here
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
