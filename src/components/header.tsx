@@ -37,22 +37,24 @@ export function Header({ lang, navigation, languageSwitcher }: Props) {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <div className="mr-4 hidden md:flex">
+        <div className="flex-1 flex items-center">
           <Link href={`/${lang}`} className="mr-6">
             <Logo />
           </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="transition-colors hover:text-primary"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
         </div>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex flex-1 justify-center items-center space-x-6 text-sm font-medium">
+          {navItems.map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className="px-3 py-2 rounded-md transition-colors hover:bg-accent hover:text-accent-foreground"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
         {/* Mobile Nav */}
         <Sheet>
@@ -82,12 +84,8 @@ export function Header({ lang, navigation, languageSwitcher }: Props) {
             </div>
           </SheetContent>
         </Sheet>
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <div className="w-full flex-1 md:w-auto md:flex-none">
-            <Link href={`/${lang}`} className="md:hidden">
-              <Logo />
-            </Link>
-          </div>
+        
+        <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="flex items-center">
             <LanguageSwitcher dict={languageSwitcher} />
           </nav>
