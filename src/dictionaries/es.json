@@ -57,8 +57,9 @@
     "form_send": "Enviar Mensaje",
     "info_title": "Información de Contacto",
     "info_address": "123 Adventure Lane, Patagonia, Chile",
-    "info_phone": "+56 9 1234 5678",
-    "info_email": "contacto@riosuradventure.com"
+    "info_phone": "+56932484165",
+    "info_email": "contacto@riosuradventure.com",
+    "whatsapp_tooltip": "Escríbenos"
   },
   "footer": {
     "rights": "Todos los derechos reservados."

@@ -65,3 +65,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* si la pantalla es MUY ancha, estira un poco más */
+@media (min-width: 1536px){
+  .container{ 
+    max-width: 1800px; 
+  }
+}

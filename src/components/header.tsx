@@ -37,14 +37,14 @@ export function Header({ lang, navigation, languageSwitcher }: Props) {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <div className="flex-1 flex items-center">
+        <div className="flex items-center mr-auto">
           <Link href={`/${lang}`} className="mr-6">
             <Logo />
           </Link>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex flex-1 justify-center items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {navItems.map((item) => (
             <Link
               key={item.label}
@@ -85,7 +85,7 @@ export function Header({ lang, navigation, languageSwitcher }: Props) {
           </SheetContent>
         </Sheet>
         
-        <div className="flex flex-1 items-center justify-end space-x-2">
+        <div className="flex items-center ml-auto">
           <nav className="flex items-center">
             <LanguageSwitcher dict={languageSwitcher} />
           </nav>

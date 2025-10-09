@@ -16,29 +16,29 @@
     "hero_cta": "Explore Our Tours",
     "featured_services_title": "Popular Adventures",
     "featured_promotion_title": "Special Summer Offer",
-    "featured_promotion_description": "Get 20% off all kayak tours when you book this month! Don't miss the chance to paddle through crystal-clear waters.",
+    "featured_promotion_description": "Get 20% off all kayaking tours when you book this month! Don’t miss out on the chance to paddle through pristine waters.",
     "featured_promotion_cta": "View Promotion"
   },
   "services": {
     "title": "Our Adventure Services",
-    "description": "We offer a variety of tours and activities for all levels of adventurers. Each experience is crafted to be safe, exciting, and memorable.",
+    "description": "We offer a variety of tours and activities for all skill levels. Every experience is designed to be safe, thrilling, and memorable.",
     "kayaking_title": "River Kayaking",
-    "kayaking_description": "Paddle through calm waters and thrilling rapids. Perfect for beginners and experts alike.",
+    "kayaking_description": "Paddle through calm waters and exciting rapids. Perfect for beginners and experts alike.",
     "hiking_title": "Mountain Hiking",
     "hiking_description": "Explore scenic trails with breathtaking views. Half-day and full-day treks available.",
     "biking_title": "Mountain Biking",
-    "biking_description": "Ride thrilling single-track trails through lush forests and challenging terrain.",
+    "biking_description": "Ride thrilling bike trails through forests and challenging terrain.",
     "camping_title": "Camping Under the Stars",
-    "camping_description": "Experience nature up close with our fully-equipped and guided camping excursions.",
+    "camping_description": "Experience the wilderness up close with our guided and fully-equipped camping trips.",
     "book_now": "Book Now"
   },
   "promotions": {
-    "title": "Promotions & Special Offers",
+    "title": "Promotions and Special Offers",
     "description": "Take advantage of our seasonal deals and discounts to make your next adventure even more incredible.",
     "summer_title": "Summer Special",
-    "summer_description": "20% off all kayaking and hiking tours! Valid from June to August.",
+    "summer_description": "20% off on all Kayaking and Hiking tours! Valid from June to August.",
     "group_title": "Group Discount",
-    "group_description": "Plan an adventure with friends or family and get 25% off for groups of 5 or more.",
+    "group_description": "Plan an adventure with friends or family and get a 25% discount for groups of 5 or more.",
     "claim_offer": "Claim Offer"
   },
   "about": {
@@ -49,16 +49,17 @@
     "story_text": "Founded in 2010, Rio Sur Adventure started as a small, local kayaking club. Our passion for adventure and love for the stunning southern landscapes inspired us to grow and share our experiences with the world. Today, we offer a wide range of activities, always maintaining our commitment to quality and authentic adventure."
   },
   "contact": {
-    "title": "Get In Touch",
-    "description": "Have a question or ready to book your adventure? Send us a message and we'll get back to you shortly.",
+    "title": "Get in Touch",
+    "description": "Have a question or ready to book your adventure? Send us a message, and we’ll get back to you shortly.",
     "form_name": "Name",
     "form_email": "Email",
     "form_message": "Message",
     "form_send": "Send Message",
     "info_title": "Contact Information",
     "info_address": "123 Adventure Lane, Patagonia, Chile",
-    "info_phone": "+56 9 1234 5678",
-    "info_email": "contact@riosuradventure.com"
+    "info_phone": "+56932484165",
+    "info_email": "contact@riosuradventure.com",
+    "whatsapp_tooltip": "Message us"
   },
   "footer": {
     "rights": "All rights reserved."

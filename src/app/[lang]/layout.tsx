@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import { getDictionary } from '@/lib/dictionary';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { WhatsAppButton } from '@/components/whatsapp-button';
 
 type Props = {
   children: ReactNode;
@@ -16,6 +17,7 @@ export default async function LangLayout({ children, params: { lang } }: Props) 
       <Header lang={lang} navigation={dict.navigation} languageSwitcher={dict.language} />
       <main className="flex-grow">{children}</main>
       <Footer dict={dict.footer} />
+      <WhatsAppButton phone={dict.contact.info_phone} tooltip={dict.contact.whatsapp_tooltip} />
     </div>
   );
 }
