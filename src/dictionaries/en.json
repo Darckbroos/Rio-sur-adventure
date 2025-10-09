@@ -1,0 +1,66 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "promotions": "Promotions",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "language": {
+    "current": "English",
+    "switch": "Cambiar a Español"
+  },
+  "home": {
+    "hero_title": "Adventure Awaits in the South",
+    "hero_subtitle": "Discover breathtaking landscapes and unforgettable experiences with Rio Sur Adventure.",
+    "hero_cta": "Explore Our Tours",
+    "featured_services_title": "Popular Adventures",
+    "featured_promotion_title": "Special Summer Offer",
+    "featured_promotion_description": "Get 20% off all kayak tours when you book this month! Don't miss the chance to paddle through crystal-clear waters.",
+    "featured_promotion_cta": "View Promotion"
+  },
+  "services": {
+    "title": "Our Adventure Services",
+    "description": "We offer a variety of tours and activities for all levels of adventurers. Each experience is crafted to be safe, exciting, and memorable.",
+    "kayaking_title": "River Kayaking",
+    "kayaking_description": "Paddle through calm waters and thrilling rapids. Perfect for beginners and experts alike.",
+    "hiking_title": "Mountain Hiking",
+    "hiking_description": "Explore scenic trails with breathtaking views. Half-day and full-day treks available.",
+    "biking_title": "Mountain Biking",
+    "biking_description": "Ride thrilling single-track trails through lush forests and challenging terrain.",
+    "camping_title": "Camping Under the Stars",
+    "camping_description": "Experience nature up close with our fully-equipped and guided camping excursions.",
+    "book_now": "Book Now"
+  },
+  "promotions": {
+    "title": "Promotions & Special Offers",
+    "description": "Take advantage of our seasonal deals and discounts to make your next adventure even more incredible.",
+    "summer_title": "Summer Special",
+    "summer_description": "20% off all kayaking and hiking tours! Valid from June to August.",
+    "group_title": "Group Discount",
+    "group_description": "Plan an adventure with friends or family and get 25% off for groups of 5 or more.",
+    "claim_offer": "Claim Offer"
+  },
+  "about": {
+    "title": "About Rio Sur Adventure",
+    "mission_title": "Our Mission",
+    "mission_text": "Our mission is to provide exceptional outdoor adventures that connect people with nature. We believe in sustainable tourism, safety, and creating memories that last a lifetime. Our team of expert guides is passionate about sharing the beauty of our region with you.",
+    "story_title": "Our Story",
+    "story_text": "Founded in 2010, Rio Sur Adventure started as a small, local kayaking club. Our passion for adventure and love for the stunning southern landscapes inspired us to grow and share our experiences with the world. Today, we offer a wide range of activities, always maintaining our commitment to quality and authentic adventure."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a question or ready to book your adventure? Send us a message and we'll get back to you shortly.",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_message": "Message",
+    "form_send": "Send Message",
+    "info_title": "Contact Information",
+    "info_address": "123 Adventure Lane, Patagonia, Chile",
+    "info_phone": "+56 9 1234 5678",
+    "info_email": "contact@riosuradventure.com"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

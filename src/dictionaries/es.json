@@ -1,0 +1,66 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "promotions": "Promociones",
+    "about": "Nosotros",
+    "contact": "Contáctanos"
+  },
+  "language": {
+    "current": "Español",
+    "switch": "Switch to English"
+  },
+  "home": {
+    "hero_title": "La Aventura te Espera en el Sur",
+    "hero_subtitle": "Descubre paisajes impresionantes y experiencias inolvidables con Rio Sur Adventure.",
+    "hero_cta": "Explora Nuestros Tours",
+    "featured_services_title": "Aventuras Populares",
+    "featured_promotion_title": "Oferta Especial de Verano",
+    "featured_promotion_description": "¡Obtén un 20% de descuento en todos los tours de kayak al reservar este mes! No te pierdas la oportunidad de remar en aguas cristalinas.",
+    "featured_promotion_cta": "Ver Promoción"
+  },
+  "services": {
+    "title": "Nuestros Servicios de Aventura",
+    "description": "Ofrecemos una variedad de tours y actividades para todos los niveles de aventureros. Cada experiencia está diseñada para ser segura, emocionante y memorable.",
+    "kayaking_title": "Kayak en el Río",
+    "kayaking_description": "Rema por aguas tranquilas y rápidos emocionantes. Perfecto para principiantes y expertos.",
+    "hiking_title": "Senderismo de Montaña",
+    "hiking_description": "Explora senderos escénicos con vistas impresionantes. Excursiones de medio día y día completo disponibles.",
+    "biking_title": "Ciclismo de Montaña",
+    "biking_description": "Recorre emocionantes senderos en bicicleta a través de bosques y terrenos desafiantes.",
+    "camping_title": "Camping Bajo las Estrellas",
+    "camping_description": "Experimenta la naturaleza de cerca con nuestras excursiones de camping guiadas y totalmente equipadas.",
+    "book_now": "Reservar Ahora"
+  },
+  "promotions": {
+    "title": "Promociones y Ofertas Especiales",
+    "description": "Aprovecha nuestras ofertas de temporada y descuentos para que tu próxima aventura sea aún más increíble.",
+    "summer_title": "Especial de Verano",
+    "summer_description": "¡20% de descuento en todos los tours de kayak y senderismo! Válido de junio a agosto.",
+    "group_title": "Descuento para Grupos",
+    "group_description": "Planea una aventura con amigos o familiares y obtén un 25% de descuento para grupos de 5 o más.",
+    "claim_offer": "Reclamar Oferta"
+  },
+  "about": {
+    "title": "Sobre Rio Sur Adventure",
+    "mission_title": "Nuestra Misión",
+    "mission_text": "Nuestra misión es proporcionar aventuras al aire libre excepcionales que conecten a las personas con la naturaleza. Creemos en el turismo sostenible, la seguridad y en crear recuerdos que duren toda la vida. Nuestro equipo de guías expertos está apasionado por compartir la belleza de nuestra región contigo.",
+    "story_title": "Nuestra Historia",
+    "story_text": "Fundada en 2010, Rio Sur Adventure comenzó como un pequeño club de kayak local. Nuestra pasión por la aventura y el amor por los impresionantes paisajes del sur nos inspiraron a crecer y compartir nuestras experiencias con el mundo. Hoy, ofrecemos una amplia gama de actividades, manteniendo siempre nuestro compromiso con la calidad y la aventura auténtica."
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "description": "¿Tienes alguna pregunta o estás listo para reservar tu aventura? Envíanos un mensaje y nos pondremos en contacto contigo en breve.",
+    "form_name": "Nombre",
+    "form_email": "Correo Electrónico",
+    "form_message": "Mensaje",
+    "form_send": "Enviar Mensaje",
+    "info_title": "Información de Contacto",
+    "info_address": "123 Adventure Lane, Patagonia, Chile",
+    "info_phone": "+56 9 1234 5678",
+    "info_email": "contacto@riosuradventure.com"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}
