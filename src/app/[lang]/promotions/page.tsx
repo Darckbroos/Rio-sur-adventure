@@ -5,11 +5,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { TicketPercent } from 'lucide-react';
 
-type Props = {
-  params: { lang: string };
-};
+type Props = { params: Promise<{ lang: string }> };
 
-export default async function PromotionsPage({ params: { lang } }: Props) {
+export default async function PromotionsPage({ params }: Props) {
+  const { lang } = await params;
   const dict = await getDictionary(lang);
 
   const promotions = [

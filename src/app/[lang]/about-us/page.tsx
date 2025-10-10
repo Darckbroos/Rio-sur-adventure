@@ -2,13 +2,13 @@ import Image from 'next/image';
 import { getDictionary } from '@/lib/dictionary';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-type Props = {
-  params: { lang: string };
-};
+type Props = { params: Promise<{ lang: string }> };
 
-export default async function AboutUsPage({ params: { lang } }: Props) {
+export default async function AboutUsPage({ params }: Props) {
+  const { lang } = await params;
   const dict = await getDictionary(lang);
   const teamImage = PlaceHolderImages.find(img => img.id === 'about-us-team');
+  
 
   return (
     <div className="container mx-auto px-4 py-16">

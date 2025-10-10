@@ -6,16 +6,16 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Bike, Waves, Mountain } from 'lucide-react';
 
-type Props = {
-  params: { lang: string };
-};
+type Props = { params: Promise<{ lang: string }> };
 
-export default async function HomePage({ params: { lang } }: Props) {
+export default async function HomePage({ params }: Props) {
+  const { lang } = await params;
   const dict = await getDictionary(lang);
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-home');
   const kayakImage = PlaceHolderImages.find(img => img.id === 'service-kayaking');
   const hikeImage = PlaceHolderImages.find(img => img.id === 'service-hiking');
   const bikeImage = PlaceHolderImages.find(img => img.id === 'service-biking');
+  
 
   const services = [
     {

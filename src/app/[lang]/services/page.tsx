@@ -4,11 +4,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
-type Props = {
-  params: { lang: string };
-};
+type Props = { params: Promise<{ lang: string }> };
 
-export default async function ServicesPage({ params: { lang } }: Props) {
+export default async function ServicesPage({ params }: Props) {
+  const { lang } = await params;
   const dict = await getDictionary(lang);
 
   const services = [

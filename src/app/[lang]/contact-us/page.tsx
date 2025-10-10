@@ -2,11 +2,10 @@ import { getDictionary } from '@/lib/dictionary';
 import { ContactForm } from './contact-form';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
-type Props = {
-  params: { lang: string };
-};
+type Props = { params: Promise<{ lang: string }> };
 
-export default async function ContactUsPage({ params: { lang } }: Props) {
+export default async function ContactUsPage({ params }: Props) {
+  const { lang } = await params;
   const dict = await getDictionary(lang);
 
   return (
