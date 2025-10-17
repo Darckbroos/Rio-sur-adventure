@@ -1,40 +1,51 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getDictionary } from '@/lib/dictionary';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Bike, Waves, Mountain } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Bike, Waves, Mountain, LifeBuoy } from 'lucide-react'; // Added LifeBuoy for Rafting
+
+// Import all necessary local images
+import HeroImage from '@/../public/inicio/inicio3.jpg';
+import KayakImage from '@/../public/servicios/skayak2.jpg';
+import HikingImage from '@/../public/servicios/senderismo.jpg';
+import BikingImage from '@/../public/servicios/ciclismo.jpg';
+import RaftingImage from '@/../public/servicios/srafting.jpg'; // Added Rafting image
 
 type Props = { params: Promise<{ lang: string }> };
 
 export default async function HomePage({ params }: Props) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-home');
-  const kayakImage = PlaceHolderImages.find(img => img.id === 'service-kayaking');
-  const hikeImage = PlaceHolderImages.find(img => img.id === 'service-hiking');
-  const bikeImage = PlaceHolderImages.find(img => img.id === 'service-biking');
-  
 
   const services = [
     {
       icon: <Waves className="h-10 w-10 text-primary" />,
       title: dict.services.kayaking_title,
       description: dict.services.kayaking_description.substring(0, 100) + '...',
-      image: kayakImage
+      imageUrl: KayakImage,
+      alt: 'Persona en kayak en un río rodeado de naturaleza.',
+    },
+    {
+      icon: <LifeBuoy className="h-10 w-10 text-primary" />,
+      title: dict.services.rafting_title,
+      description: dict.services.rafting_description.substring(0, 100) + '...',
+      imageUrl: RaftingImage,
+      alt: 'Grupo de personas haciendo rafting en aguas bravas.',
     },
     {
       icon: <Mountain className="h-10 w-10 text-primary" />,
       title: dict.services.hiking_title,
       description: dict.services.hiking_description.substring(0, 100) + '...',
-      image: hikeImage
+      imageUrl: HikingImage,
+      alt: 'Persona caminando por un sendero de montaña con vistas espectaculares.',
     },
     {
       icon: <Bike className="h-10 w-10 text-primary" />,
       title: dict.services.biking_title,
       description: dict.services.biking_description.substring(0, 100) + '...',
-      image: bikeImage
+      imageUrl: BikingImage,
+      alt: 'Ciclista de montaña descendiendo por un sendero boscoso.',
     }
   ];
 
@@ -42,16 +53,13 @@ export default async function HomePage({ params }: Props) {
     <div>
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] w-full">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
+        <Image
+          src={HeroImage}
+          alt="Paisaje montañoso impresionante con un río serpenteante al atardecer."
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold">
@@ -72,26 +80,23 @@ export default async function HomePage({ params }: Props) {
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-12">
             {dict.home.featured_services_title}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                {service.image && (
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={service.image.imageUrl}
-                      alt={service.image.description}
-                      fill
-                      className="object-cover"
-                      data-ai-hint={service.image.imageHint}
-                    />
-                  </div>
-                )}
+              <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={service.imageUrl}
+                    alt={service.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <CardHeader className="items-center text-center">
                   {service.icon}
-                  <CardTitle className="mt-4">{service.title}</CardTitle>
+                  <CardTitle className="mt-4 text-lg">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-muted-foreground">{service.description}</p>
+                <CardContent className="text-center flex-grow flex flex-col">
+                  <p className="text-muted-foreground flex-grow">{service.description}</p>
                    <Button asChild variant="link" className="mt-4 text-primary">
                     <Link href={`/${lang}/services`}>{dict.services.book_now}</Link>
                   </Button>

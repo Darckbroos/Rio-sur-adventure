@@ -15,9 +15,9 @@
     "hero_subtitle": "Descubre paisajes impresionantes y experiencias inolvidables con Rio Sur Adventure.",
     "hero_cta": "Explora Nuestros Tours",
     "featured_services_title": "Aventuras Populares",
-    "featured_promotion_title": "Oferta Especial de Verano",
-    "featured_promotion_description": "¡Obtén un 20% de descuento en todos los tours de kayak al reservar este mes! No te pierdas la oportunidad de remar en aguas cristalinas.",
-    "featured_promotion_cta": "Ver Promoción"
+    "featured_promotion_title": "Nuevas Promociones Disponibles",
+    "featured_promotion_description": "Tenemos nuevos paquetes de aventura que incluyen estadía, traslados y experiencias inolvidables. ¡No te los pierdas!",
+    "featured_promotion_cta": "Ver Promociones"
   },
   "services": {
     "title": "Nuestros Servicios de Aventura",
@@ -30,16 +30,44 @@
     "biking_description": "Recorre emocionantes senderos en bicicleta a través de bosques y terrenos desafiantes.",
     "camping_title": "Camping Bajo las Estrellas",
     "camping_description": "Experimenta la naturaleza de cerca con nuestras excursiones de camping guiadas y totalmente equipadas.",
+    "rafting_title": "Rafting de Aguas Blancas",
+    "rafting_description": "Desciende por los rápidos más emocionantes y siente la fuerza del río. Una aventura llena de adrenalina garantizada.",
     "book_now": "Reservar Ahora"
   },
   "promotions": {
-    "title": "Promociones y Ofertas Especiales",
-    "description": "Aprovecha nuestras ofertas de temporada y descuentos para que tu próxima aventura sea aún más increíble.",
-    "summer_title": "Especial de Verano",
-    "summer_description": "¡20% de descuento en todos los tours de kayak y senderismo! Válido de junio a agosto.",
-    "group_title": "Descuento para Grupos",
-    "group_description": "Planea una aventura con amigos o familiares y obtén un 25% de descuento para grupos de 5 o más.",
-    "claim_offer": "Reclamar Oferta"
+    "title": "Nuestros Paquetes de Aventura",
+    "description": "Elige tu próxima gran experiencia con nuestros paquetes todo incluido. Alojamiento, traslados desde el aeropuerto y aventuras inolvidables te esperan.",
+    "bonus_track_title": "Bonus Track",
+    "bonus_track_description": "\"Vista a las estrellas\" (Solo en condiciones óptimas de clima)",
+    "includes": "Todas las promociones incluyen alojamiento y traslados desde el aeropuerto hacia todos los destinos.",
+    "claim_offer": "Consultar Disponibilidad",
+    "packages": [
+      {
+        "id": "promo-aventurera",
+        "title": "Promoción Aventurera",
+        "duration": "4 días / 3 noches",
+        "activities": [
+          "Travesía en el lago",
+          "Trekking o cabalgata",
+          "Termas",
+          "Caminata por pto. Fuy"
+        ],
+        "image": "promotion-summer"
+      },
+      {
+        "id": "promo-adrenalina",
+        "title": "Promoción Adrenalina",
+        "duration": "5 días / 3 noches",
+        "activities": [
+          "Rafting",
+          "Canopi",
+          "Trekking nivel 3",
+          "Travesía en el lago",
+          "Termas"
+        ],
+        "image": "promotion-group"
+      }
+    ]
   },
   "about": {
     "title": "Sobre Rio Sur Adventure",

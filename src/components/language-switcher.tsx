@@ -57,14 +57,13 @@ export function LanguageSwitcher({ dict }: Props) {
         <Button variant="outline" className="flex items-center gap-2">
             {currentLocale === 'es' ? <ChileFlag /> : <UKFlag />}
             <span className="uppercase">{currentLocale}</span>
-            <span className="sr-only">Toggle language</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem asChild>
           <Link href={targetPath} className="flex items-center gap-2">
             {targetLocale === 'es' ? <ChileFlag /> : <UKFlag />}
-            {dict.switch}
+            <span className="uppercase">{targetLocale}</span>
           </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>

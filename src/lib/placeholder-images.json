@@ -3,43 +3,43 @@
     {
       "id": "hero-home",
       "description": "A beautiful river canyon view with kayakers.",
-      "imageUrl": "https://picsum.photos/seed/rio-sur-hero/1920/1080",
+      "imageUrl": "/inicio/inicio3.jpg",
       "imageHint": "river kayak"
     },
     {
       "id": "service-kayaking",
-      "description": "A person kayaking on a serene lake.",
-      "imageUrl": "https://picsum.photos/seed/service-kayak/600/400",
-      "imageHint": "kayak lake"
+      "description": "People enjoying kayaking in beautiful landscapes.",
+      "imageUrls": ["/servicios/skayak.jpg", "/servicios/skayak2.jpg"],
+      "imageHint": "kayaking"
     },
     {
       "id": "service-hiking",
       "description": "A hiker looking out over a mountain valley.",
-      "imageUrl": "https://picsum.photos/seed/service-hike/600/400",
+      "imageUrls": ["https://picsum.photos/seed/service-hike/600/400"],
       "imageHint": "hiking mountains"
     },
     {
       "id": "service-biking",
       "description": "A mountain biker on a forest trail.",
-      "imageUrl": "https://picsum.photos/seed/service-bike/600/400",
+      "imageUrls": ["https://picsum.photos/seed/service-bike/600/400"],
       "imageHint": "mountain bike"
     },
     {
       "id": "service-camping",
       "description": "A tent under the starry night sky.",
-      "imageUrl": "https://picsum.photos/seed/service-camp/600/400",
+      "imageUrls": ["https://picsum.photos/seed/service-camp/600/400"],
       "imageHint": "camping night"
     },
     {
       "id": "promotion-summer",
       "description": "Friends enjoying a sunny day by the river.",
-      "imageUrl": "https://picsum.photos/seed/promo-summer/600/400",
+      "imageUrl": "/promociones/aventurera.jpg",
       "imageHint": "summer river"
     },
     {
       "id": "promotion-group",
       "description": "A group of people celebrating on a mountain top.",
-      "imageUrl": "https://picsum.photos/seed/promo-group/600/400",
+      "imageUrl": "/promociones/adrenalina.jpg",
       "imageHint": "group mountain"
     },
     {
