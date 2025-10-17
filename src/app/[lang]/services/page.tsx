@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 // Import local images for all services
 import KayakImage1 from '@/../public/servicios/skayak.jpg';
@@ -19,6 +20,13 @@ import HikingImage1 from '@/../public/servicios/senderismo.jpg';
 import HikingImage2 from '@/../public/servicios/senderismo2.jpg';
 import BikingImage from '@/../public/servicios/ciclismo.jpg';
 import CampingImage from '@/../public/servicios/camping.jpg';
+import HorsebackImage from '@/../public/servicios/cabalgata.jpg';
+import LakeImage from '@/../public/servicios/lago.jpg';
+import HotSpringsImage from '@/../public/servicios/termas.jpg';
+import CanopyImage from '@/../public/servicios/canopy.jpg';
+import AdvTrekkingImage from '@/../public/servicios/trekking.jpg';
+import NightTourImage from '@/../public/servicios/nocturno.jpg';
+
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -57,6 +65,42 @@ export default async function ServicesPage({ params }: Props) {
       alt: "Imagen del servicio de camping",
       imageUrls: [CampingImage],
     },
+    {
+      title: dict.services.horseback_riding_title,
+      description: dict.services.horseback_riding_description,
+      alt: "Imagen del servicio de cabalgata",
+      imageUrls: [HorsebackImage],
+    },
+    {
+      title: dict.services.lake_expedition_title,
+      description: dict.services.lake_expedition_description,
+      alt: "Imagen del servicio de expedición en lago",
+      imageUrls: [LakeImage],
+    },
+    {
+      title: dict.services.hot_springs_title,
+      description: dict.services.hot_springs_description,
+      alt: "Imagen del servicio de termas",
+      imageUrls: [HotSpringsImage],
+    },
+    {
+      title: dict.services.canopy_title,
+      description: dict.services.canopy_description,
+      alt: "Imagen del servicio de canopy",
+      imageUrls: [CanopyImage],
+    },
+    {
+      title: dict.services.advanced_trekking_title,
+      description: dict.services.advanced_trekking_description,
+      alt: "Imagen del servicio de trekking avanzado",
+      imageUrls: [AdvTrekkingImage],
+    },
+    {
+      title: dict.services.night_tourism_title,
+      description: dict.services.night_tourism_description,
+      alt: "Imagen del servicio de turismo nocturno",
+      imageUrls: [NightTourImage],
+    }
   ];
 
   return (

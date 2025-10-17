@@ -3,14 +3,18 @@ import Link from 'next/link';
 import { getDictionary } from '@/lib/dictionary';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Bike, Waves, Mountain, LifeBuoy } from 'lucide-react'; // Added LifeBuoy for Rafting
+import { Bike, Waves, Mountain, LifeBuoy, Tent, SunMoon } from 'lucide-react'; 
+import { GiHorseHead } from 'react-icons/gi';
+
 
 // Import all necessary local images
 import HeroImage from '@/../public/inicio/inicio3.jpg';
 import KayakImage from '@/../public/servicios/skayak2.jpg';
 import HikingImage from '@/../public/servicios/senderismo.jpg';
 import BikingImage from '@/../public/servicios/ciclismo.jpg';
-import RaftingImage from '@/../public/servicios/srafting.jpg'; // Added Rafting image
+import RaftingImage from '@/../public/servicios/srafting.jpg';
+import HorsebackImage from '@/../public/servicios/cabalgata.jpg';
+import LakeImage from '@/../public/servicios/lago.jpg';
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -46,6 +50,34 @@ export default async function HomePage({ params }: Props) {
       description: dict.services.biking_description.substring(0, 100) + '...',
       imageUrl: BikingImage,
       alt: 'Ciclista de montaña descendiendo por un sendero boscoso.',
+    },
+    {
+      icon: <GiHorseHead className="h-10 w-10 text-primary" />,
+      title: dict.services.horseback_riding_title,
+      description: dict.services.horseback_riding_description.substring(0, 100) + '...',
+      imageUrl: HorsebackImage,
+      alt: 'Persona a caballo en un paisaje montañoso.',
+    },
+    {
+      icon: <Waves className="h-10 w-10 text-primary" />,
+      title: dict.services.lake_expedition_title,
+      description: dict.services.lake_expedition_description.substring(0, 100) + '...',
+      imageUrl: LakeImage,
+      alt: 'Bote en un lago cristalino frente a montañas.',
+    },
+    {
+      icon: <Tent className="h-10 w-10 text-primary" />,
+      title: dict.services.camping_title,
+      description: dict.services.camping_description.substring(0, 100) + '...',
+      imageUrl: BikingImage, // Re-using image, should be updated
+      alt: 'Tienda de campaña bajo las estrellas.',
+    },
+    {
+      icon: <SunMoon className="h-10 w-10 text-primary" />,
+      title: dict.services.night_tourism_title,
+      description: dict.services.night_tourism_description.substring(0, 100) + '...',
+      imageUrl: HikingImage, // Re-using image, should be updated
+      alt: 'Bosque de noche con estrellas visibles.',
     }
   ];
 
@@ -81,7 +113,7 @@ export default async function HomePage({ params }: Props) {
             {dict.home.featured_services_title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
+            {services.slice(0, 4).map((service, index) => (
               <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="relative h-48 w-full">
                   <Image

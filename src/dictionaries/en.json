@@ -32,6 +32,18 @@
     "camping_description": "Experience the wilderness up close with our guided and fully-equipped camping trips.",
     "rafting_title": "Whitewater Rafting",
     "rafting_description": "Descend the most exciting rapids and feel the power of the river. An adrenaline-pumping adventure guaranteed.",
+    "horseback_riding_title": "Horseback Riding",
+    "horseback_riding_description": "Enjoy the landscapes on horseback, a unique experience to connect with nature.",
+    "lake_expedition_title": "Lake Expedition & Crossing",
+    "lake_expedition_description": "Sail through crystal-clear lakes and discover hidden islands on an unforgettable expedition.",
+    "hot_springs_title": "Hot Springs",
+    "hot_springs_description": "Relax in natural hot springs surrounded by a spectacular environment.",
+    "canopy_title": "Canopy / Zip-lining",
+    "canopy_description": "Fly over the treetops and feel the adrenaline with our safe and exciting zip lines.",
+    "advanced_trekking_title": "Advanced Trekking",
+    "advanced_trekking_description": "Challenge your limits with demanding routes that will take you to exclusive peaks and viewpoints.",
+    "night_tourism_title": "Night Tourism",
+    "night_tourism_description": "Discover the magic of the forest at night with a guided walk under the stars.",
     "book_now": "Book Now"
   },
   "promotions": {

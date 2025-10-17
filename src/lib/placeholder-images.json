@@ -15,20 +15,62 @@
     {
       "id": "service-hiking",
       "description": "A hiker looking out over a mountain valley.",
-      "imageUrls": ["https://picsum.photos/seed/service-hike/600/400"],
+      "imageUrls": ["/servicios/senderismo.jpg", "/servicios/senderismo2.jpg"],
       "imageHint": "hiking mountains"
     },
     {
       "id": "service-biking",
       "description": "A mountain biker on a forest trail.",
-      "imageUrls": ["https://picsum.photos/seed/service-bike/600/400"],
+      "imageUrls": ["/servicios/ciclismo.jpg"],
       "imageHint": "mountain bike"
     },
     {
       "id": "service-camping",
       "description": "A tent under the starry night sky.",
-      "imageUrls": ["https://picsum.photos/seed/service-camp/600/400"],
+      "imageUrls": ["/servicios/camping.jpg"],
       "imageHint": "camping night"
+    },
+    {
+      "id": "service-rafting",
+      "description": "People whitewater rafting.",
+      "imageUrls": ["/servicios/srafting.jpg", "/servicios/srafting2.jpg"],
+      "imageHint": "rafting river"
+    },
+    {
+      "id": "service-horseback",
+      "description": "Person riding a horse in the mountains.",
+      "imageUrls": ["/servicios/cabalgata.jpg"],
+      "imageHint": "horseback riding"
+    },
+    {
+      "id": "service-lake",
+      "description": "Boat on a crystal clear lake.",
+      "imageUrls": ["/servicios/lago.jpg"],
+      "imageHint": "lake boat"
+    },
+    {
+      "id": "service-hotsprings",
+      "description": "Natural hot springs in a lush environment.",
+      "imageUrls": ["/servicios/termas.jpg"],
+      "imageHint": "hot springs"
+    },
+    {
+      "id": "service-canopy",
+      "description": "Person zip-lining through a forest.",
+      "imageUrls": ["/servicios/canopy.jpg"],
+      "imageHint": "canopy zipline"
+    },
+    {
+      "id": "service-adv-trekking",
+      "description": "Trekker on a challenging mountain summit.",
+      "imageUrls": ["/servicios/trekking.jpg"],
+      "imageHint": "mountain summit"
+    },
+    {
+      "id": "service-night-tourism",
+      "description": "Forest at night with stars visible.",
+      "imageUrls": ["/servicios/nocturno.jpg"],
+      "imageHint": "night forest"
     },
     {
       "id": "promotion-summer",
