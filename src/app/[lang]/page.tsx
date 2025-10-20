@@ -6,15 +6,17 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Bike, Waves, Mountain, LifeBuoy, Tent, SunMoon } from 'lucide-react'; 
 import { GiHorseHead } from 'react-icons/gi';
 
+// Import all necessary local images with corrected relative paths
+import HeroImage from '../../../public/inicio/inicio3.jpg';
+import KayakImage from '../../../public/servicios/skayak2.jpg';
+import HikingImage from '../../../public/servicios/senderismo.jpg';
+import BikingImage from '../../../public/servicios/ciclismo.jpg';
+import RaftingImage from '../../../public/servicios/srafting.jpg';
+import CampingImage from '../../../public/servicios/camping.jpg';
 
-// Import all necessary local images
-import HeroImage from '@/../public/inicio/inicio3.jpg';
-import KayakImage from '@/../public/servicios/skayak2.jpg';
-import HikingImage from '@/../public/servicios/senderismo.jpg';
-import BikingImage from '@/../public/servicios/ciclismo.jpg';
-import RaftingImage from '@/../public/servicios/srafting.jpg';
-import HorsebackImage from '@/../public/servicios/cabalgata.jpg';
-import LakeImage from '@/../public/servicios/lago.jpg';
+// Using existing images as placeholders for missing ones to prevent build errors
+import HorsebackImage from '../../../public/servicios/senderismo2.jpg'; // Placeholder for cabalgata.jpg
+import LakeImage from '../../../public/servicios/skayak.jpg'; // Placeholder for lago.jpg
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -69,7 +71,7 @@ export default async function HomePage({ params }: Props) {
       icon: <Tent className="h-10 w-10 text-primary" />,
       title: dict.services.camping_title,
       description: dict.services.camping_description.substring(0, 100) + '...',
-      imageUrl: BikingImage, // Re-using image, should be updated
+      imageUrl: CampingImage,
       alt: 'Tienda de campaña bajo las estrellas.',
     },
     {
@@ -113,7 +115,7 @@ export default async function HomePage({ params }: Props) {
             {dict.home.featured_services_title}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.slice(0, 4).map((service, index) => (
+            {services.map((service, index) => (
               <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="relative h-48 w-full">
                   <Image

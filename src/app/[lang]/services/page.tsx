@@ -9,24 +9,24 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-// Import local images for all services
-import KayakImage1 from '@/../public/servicios/skayak.jpg';
-import KayakImage2 from '@/../public/servicios/skayak2.jpg';
-import RaftingImage1 from '@/../public/servicios/srafting.jpg';
-import RaftingImage2 from '@/../public/servicios/srafting2.jpg';
-import HikingImage1 from '@/../public/servicios/senderismo.jpg';
-import HikingImage2 from '@/../public/servicios/senderismo2.jpg';
-import BikingImage from '@/../public/servicios/ciclismo.jpg';
-import CampingImage from '@/../public/servicios/camping.jpg';
-import HorsebackImage from '@/../public/servicios/cabalgata.jpg';
-import LakeImage from '@/../public/servicios/lago.jpg';
-import HotSpringsImage from '@/../public/servicios/termas.jpg';
-import CanopyImage from '@/../public/servicios/canopy.jpg';
-import AdvTrekkingImage from '@/../public/servicios/trekking.jpg';
-import NightTourImage from '@/../public/servicios/nocturno.jpg';
+// Import local images with corrected relative paths for the services page
+import KayakImage1 from '../../../../public/servicios/skayak.jpg';
+import KayakImage2 from '../../../../public/servicios/skayak2.jpg';
+import RaftingImage1 from '../../../../public/servicios/srafting.jpg';
+import RaftingImage2 from '../../../../public/servicios/srafting2.jpg';
+import HikingImage1 from '../../../../public/servicios/senderismo.jpg';
+import HikingImage2 from '../../../../public/servicios/senderismo2.jpg';
+import BikingImage from '../../../../public/servicios/ciclismo.jpg';
+import CampingImage from '../../../../public/servicios/camping.jpg';
 
+// Using existing images as placeholders for missing ones to prevent build errors
+import HorsebackImage from '../../../../public/servicios/senderismo2.jpg'; // Placeholder for cabalgata.jpg
+import LakeImage from '../../../../public/servicios/skayak.jpg'; // Placeholder for lago.jpg
+import HotSpringsImage from '../../../../public/servicios/srafting.jpg'; // Placeholder for termas.jpg
+import CanopyImage from '../../../../public/servicios/ciclismo.jpg'; // Placeholder for canopy.jpg
+import AdvTrekkingImage from '../../../../public/servicios/senderismo.jpg'; // Placeholder for trekking.jpg
+import NightTourImage from '../../../../public/servicios/camping.jpg'; // Placeholder for nocturno.jpg
 
 type Props = { params: Promise<{ lang: string }> };
 
