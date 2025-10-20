@@ -100,6 +100,18 @@ export default async function ServicesPage({ params }: Props) {
       description: dict.services.night_tourism_description,
       alt: "Imagen del servicio de turismo nocturno",
       imageUrls: [NightTourImage],
+    },
+    {
+      title: dict.services.downtown_tour_title,
+      description: dict.services.downtown_tour_description,
+      alt: "Imagen del servicio de Down Town Tour",
+      imageUrls: [BikingImage],
+    },
+    {
+      title: dict.services.filcumpulli_trek_title,
+      description: dict.services.filcumpulli_trek_description,
+      alt: "Imagen del servicio de trekking a Cima del Filcumpulli",
+      imageUrls: [AdvTrekkingImage],
     }
   ];
 

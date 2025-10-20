@@ -4,6 +4,14 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { TicketPercent, Star, Info } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -25,41 +33,63 @@ export default async function PromotionsPage({ params }: Props) {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {promotions.map((promo) => (
-          <Card key={promo.id} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-             {promo.image && (
-                <div className="relative h-64 w-full">
-                    <Image
-                        src={promo.image.imageUrl}
-                        alt={promo.image.description}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={promo.image.imageHint}
-                    />
-                </div>
-            )}
-            <div className="flex flex-col flex-grow p-6">
-                <CardHeader>
-                    <CardTitle className="font-headline text-2xl flex items-center gap-2">
-                        <TicketPercent className="h-7 w-7 text-accent" />
-                        {promo.title}
-                    </CardTitle>
-                    <CardDescription className="font-medium text-base">{promo.duration}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <ul className="space-y-2 text-muted-foreground">
-                    {promo.activities.map((activity, i) => (
-                      <li key={i} className="flex items-center gap-2">
-                        <svg className="h-4 w-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                        {activity}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                    <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">{dict.promotions.claim_offer}</Button>
-                </CardFooter>
-            </div>
-          </Card>
+          <Dialog key={promo.id}>
+            <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              {promo.image && (
+                  <div className="relative h-64 w-full">
+                      <Image
+                          src={promo.image.imageUrl}
+                          alt={promo.image.description}
+                          fill
+                          className="object-cover"
+                          data-ai-hint={promo.image.imageHint}
+                      />
+                  </div>
+              )}
+              <div className="flex flex-col flex-grow p-6">
+                  <CardHeader>
+                      <CardTitle className="font-headline text-2xl flex items-center gap-2">
+                          <TicketPercent className="h-7 w-7 text-accent" />
+                          {promo.title}
+                      </CardTitle>
+                      <CardDescription className="font-medium text-base">{promo.duration}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-grow">
+                    <ul className="space-y-2 text-muted-foreground">
+                      {promo.activities.map((activity, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <svg className="h-4 w-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                          {activity}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                  <CardFooter>
+                      <DialogTrigger asChild>
+                        <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">{dict.promotions.claim_offer}</Button>
+                      </DialogTrigger>
+                  </CardFooter>
+              </div>
+            </Card>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>{promo.title}</DialogTitle>
+                <DialogDescription asChild>
+                  <div className="mt-4">
+                    <p className="text-muted-foreground mb-4">{dict.promotions.includes_in_package}</p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      {promo.activities.map((activity, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <svg className="h-4 w-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                          {activity}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </DialogDescription>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
         ))}
       </div>
       
