@@ -3,20 +3,17 @@ import Link from 'next/link';
 import { getDictionary } from '@/lib/dictionary';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Bike, Waves, Mountain, LifeBuoy, Tent, SunMoon } from 'lucide-react'; 
+import { Bike, Waves, Mountain, LifeBuoy, Tent, SunMoon } from 'lucide-react';
 import { GiHorseHead } from 'react-icons/gi';
 
-// Import all necessary local images with corrected relative paths
-import HeroImage from '../../../public/inicio/inicio3.jpg';
+import HeroCarousel from '@/components/HeroCarousel';
 import KayakImage from '../../../public/servicios/skayak2.jpg';
 import HikingImage from '../../../public/servicios/senderismo.jpg';
 import BikingImage from '../../../public/servicios/ciclismo.jpg';
 import RaftingImage from '../../../public/servicios/srafting.jpg';
 import CampingImage from '../../../public/servicios/camping.jpg';
-
-// Using existing images as placeholders for missing ones to prevent build errors
-import HorsebackImage from '../../../public/servicios/senderismo2.jpg'; // Placeholder for cabalgata.jpg
-import LakeImage from '../../../public/servicios/skayak.jpg'; // Placeholder for lago.jpg
+import HorsebackImage from '../../../public/servicios/senderismo2.jpg';
+import LakeImage from '../../../public/servicios/skayak.jpg';
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -85,17 +82,11 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero Section with Carousel */}
       <section className="relative h-[60vh] md:h-[80vh] w-full">
-        <Image
-          src={HeroImage}
-          alt="Paisaje montañoso impresionante con un río serpenteante al atardecer."
-          fill
-          className="object-cover"
-          priority
-        />
+        <HeroCarousel />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white p-4">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold">
             {dict.home.hero_title}
           </h1>
@@ -140,7 +131,7 @@ export default async function HomePage({ params }: Props) {
           </div>
         </div>
       </section>
-      
+
       {/* Promotion Section */}
       <section className="py-16 md:py-24 bg-card">
          <div className="container mx-auto px-4">

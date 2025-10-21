@@ -1,39 +1,37 @@
-'use client';
+"use client";
 
 import Image from 'next/image';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
+import { useState, useEffect } from 'react';
 
-type HeroCarouselProps = {
-  images: string[];
-  altText: string;
-};
+import image1 from '../../public/inicio/inicio.jpg';
+import image2 from '../../public/inicio/inicio3.jpg';
+import image3 from '../../public/inicio/inicio4.jpg';
 
-export function HeroCarousel({ images, altText }: HeroCarouselProps) {
+const images = [image1, image2, image3];
+
+export default function HeroCarousel() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(intervalId); // Cleanup on component unmount
+  }, []);
+
   return (
-    <Carousel 
-      className="w-full h-full"
-      opts={{ loop: true }}
-      plugins={[
-        Autoplay({
-          delay: 5000, // 5 seconds
-        }),
-      ]}
-    >
-      <CarouselContent className="h-full">
-        {images.map((src, index) => (
-          <CarouselItem key={index} className="h-full">
-            <Image
-              src={src}
-              alt={`${altText} ${index + 1}`}
-              fill
-              priority={index === 0} // Prioritize the first image
-              className="object-cover"
-              sizes="100vw"
-            />
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-    </Carousel>
+    <div className="relative h-full w-full">
+      {images.map((src, index) => (
+        <Image
+          key={index}
+          src={src}
+          alt={`Carrusel de imágenes de fondo #${index + 1}`}
+          fill
+          className={`object-cover transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+          priority={index === 0}
+        />
+      ))}
+    </div>
   );
 }

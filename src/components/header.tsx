@@ -3,7 +3,8 @@ import { Menu } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 type NavItem = {
   href: string;
@@ -68,6 +69,9 @@ export function Header({ lang, navigation, languageSwitcher }: Props) {
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="pr-0">
+            <VisuallyHidden>
+              <SheetTitle>Menu</SheetTitle>
+            </VisuallyHidden>
             <Link href={`/${lang}`} className="mb-8 flex items-center">
               <Logo />
             </Link>
