@@ -28,7 +28,7 @@ export default function HeroCarousel() {
           src={src}
           alt={`Carrusel de imágenes de fondo #${index + 1}`}
           fill
-          className={`object-cover transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
+          className={`object-fill transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           priority={index === 0}
         />
       ))}
