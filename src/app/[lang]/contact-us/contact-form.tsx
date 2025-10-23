@@ -5,6 +5,7 @@ import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { Loader2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -26,6 +27,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -45,11 +47,21 @@ type Props = {
     form_email: string;
     form_message: string;
     form_send: string;
+    form_placeholder_name: string;
+    form_placeholder_email: string;
+    form_placeholder_message: string;
+    dialog_success_title: string;
+    dialog_success_description: string;
+    dialog_success_close: string;
+    toast_error_title: string;
+    toast_error_description: string;
   };
 };
 
 export function ContactForm({ dict }: Props) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
+  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -61,12 +73,34 @@ export function ContactForm({ dict }: Props) {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // This is where you would handle form submission, e.g., send an email or save to a database.
-    // For this demo, we'll just log the values and show a success dialog.
-    console.log(values);
-    
-    setShowSuccessDialog(true);
-    form.reset();
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Something went wrong');
+      }
+
+      setShowSuccessDialog(true);
+      form.reset();
+
+    } catch (error: any) {
+      toast({
+        variant: "destructive",
+        title: dict.toast_error_title,
+        description: error.message || dict.toast_error_description,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -80,7 +114,7 @@ export function ContactForm({ dict }: Props) {
               <FormItem>
                 <FormLabel>{dict.form_name}</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} />
+                  <Input placeholder={dict.form_placeholder_name} {...field} disabled={isSubmitting} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -93,7 +127,7 @@ export function ContactForm({ dict }: Props) {
               <FormItem>
                 <FormLabel>{dict.form_email}</FormLabel>
                 <FormControl>
-                  <Input placeholder="john.doe@example.com" {...field} />
+                  <Input placeholder={dict.form_placeholder_email} {...field} disabled={isSubmitting} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -107,30 +141,34 @@ export function ContactForm({ dict }: Props) {
                 <FormLabel>{dict.form_message}</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Tell us how we can help..."
+                    placeholder={dict.form_placeholder_message}
                     className="min-h-[120px]"
                     {...field}
+                    disabled={isSubmitting}
                   />
                 </FormControl>
                 <FormMessage />
               </FormItem>
             )}
           />
-          <Button type="submit" className="w-full bg-primary hover:bg-primary/90">{dict.form_send}</Button>
+          <Button type="submit" className="w-full bg-primary hover:bg-primary/90" disabled={isSubmitting}>
+            {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+            {dict.form_send}
+          </Button>
         </form>
       </Form>
 
       <AlertDialog open={showSuccessDialog} onOpenChange={setShowSuccessDialog}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Message Sent!</AlertDialogTitle>
+            <AlertDialogTitle>{dict.dialog_success_title}</AlertDialogTitle>
             <AlertDialogDescription>
-              Thank you for contacting us. We&apos;ll get back to you shortly.
+              {dict.dialog_success_description}
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogAction onClick={() => setShowSuccessDialog(false)}>
-              Close
+              {dict.dialog_success_close}
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>

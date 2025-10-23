@@ -25,21 +25,21 @@ export default async function ContactUsPage({ params }: Props) {
             <div className="flex items-start gap-4">
               <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg">Address</h3>
+                <h3 className="font-semibold text-lg">{dict.contact.info_label_address}</h3>
                 <p className="text-muted-foreground">{dict.contact.info_address}</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Phone className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                <div>
-                <h3 className="font-semibold text-lg">Phone</h3>
+                <h3 className="font-semibold text-lg">{dict.contact.info_label_phone}</h3>
                 <p className="text-muted-foreground">{dict.contact.info_phone}</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Mail className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg">Email</h3>
+                <h3 className="font-semibold text-lg">{dict.contact.info_label_email}</h3>
                 <p className="text-muted-foreground">{dict.contact.info_email}</p>
               </div>
             </div>

@@ -73,11 +73,22 @@
     "form_email": "Email",
     "form_message": "Message",
     "form_send": "Send Message",
+    "form_placeholder_name": "John Doe",
+    "form_placeholder_email": "john.doe@example.com",
+    "form_placeholder_message": "Tell us how we can help...",
     "info_title": "Contact Information",
+    "info_label_address": "Address",
+    "info_label_phone": "Phone",
+    "info_label_email": "Email",
     "info_address": "123 Adventure Lane, Patagonia, Chile",
     "info_phone": "+56932484165",
-    "info_email": "contact@riosuradventure.com",
-    "whatsapp_tooltip": "Message us"
+    "info_email": "aventura.sur.rsa@gmail.com",
+    "whatsapp_tooltip": "Message us",
+    "dialog_success_title": "Message Sent!",
+    "dialog_success_description": "Thank you for contacting us. We'll get back to you shortly.",
+    "dialog_success_close": "Close",
+    "toast_error_title": "Failed to send message",
+    "toast_error_description": "There was a problem with your request."
   },
   "footer": {
     "rights": "All rights reserved."
