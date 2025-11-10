@@ -1,0 +1,283 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "promotions": "Promotions",
+    "about": "About Us",
+    "contact": "Contact Us"
+  },
+  "language": {
+    "current": "English",
+    "switch": "Cambiar a Español"
+  },
+  "home": {
+    "hero_title": "Adventure Awaits in the South",
+    "hero_subtitle": "Discover breathtaking landscapes and unforgettable experiences with Rio Sur Adventure.",
+    "hero_cta": "Explore Our Tours",
+    "featured_services_title": "Popular Adventures",
+    "featured_promotion_title": "New Promotions Available",
+    "featured_promotion_description": "We have new adventure packages that include lodging, transfers, and unforgettable experiences. Don't miss out!",
+    "featured_promotion_cta": "View Promotions"
+  },
+  "services": {
+    "title": "Our Adventure Services",
+    "description": "We offer a variety of tours and activities for all skill levels. Every experience is designed to be safe, thrilling, and memorable. Plus, to recharge your energy, all our services include a complimentary snack!",
+    "hiking_title": "Mountain Hiking",
+    "hiking_description": "Embark on an adventure where every step connects you with pure nature. You will ascend through native forests and dreamlike viewpoints while enjoying a snack that recharges your energy to continue exploring. Feel the mountain breathe with you and let yourself be carried away by its untamed magic!",
+    "biking_title": "Bike Rental: Your Adventure, Your Pace",
+    "biking_description": "Feel the wind on your face and the freedom to explore Panguipulli on two wheels! Our high-end mountain bikes are your passport to adventure. Design your own journey, with no guides or fixed schedules. We provide the gear, you choose the path. Ready to pedal into the unknown?",
+    "rafting_title": "Whitewater Rafting: Conquer the Wild Rivers!",
+    "rafting_description": "Southern Chile is a paradise for rafting, with rivers born from the Andes that carve their way through volcanic landscapes and lush forests. It's not just a sport; it's a pact with nature. Feel the power of the water beneath your raft, paddle as a team, and celebrate every rapid as a victory. Prepare your senses for a pure dose of adrenaline in the veins of Patagonia. The river is calling!",
+    "horseback_riding_title": "Horseback Riding Expedition",
+    "horseback_riding_description": "Discover freedom at a gallop, riding through landscapes that seem taken from a dream. After a day of connection with nature and local tradition, enjoy a rustic barbecue outdoors that awakens the senses and celebrates life. An unforgettable day of laughter, fire, and friendship!",
+    "lake_expedition_title": "7 Lakes Crossing",
+    "lake_expedition_description": "Float on crystal-clear waters surrounded by mountains that reflect like mirrors. Every paddle stroke is a caress to the soul, every wave a moment of freedom. Dare to glide across the lake and discover the perfect balance between adventure, calm, and wonder!",
+    "hot_springs_title": "Hot Springs",
+    "hot_springs_description": "Picture this: after a day of adventure, you immerse yourself in waters flowing from the heart of the earth, surrounded by ancient forests and the pure Patagonian air. In the Lakes Region, every hot spring is a sanctuary. We invite you to disconnect from the world and reconnect with yourself in steaming pools under a starry sky. It's not just relaxation; it's therapy for the body and soul that only southern Chile can offer. Let yourself be embraced by the volcanic magic of Panguipulli!",
+    "canopy_title": "Canopy: Fly Over the Heart of the Forest!",
+    "canopy_description": "Ready to fly? Glide at full speed above the treetops, feeling the pure adrenaline and seeing the world from a bird's-eye view. This is your chance to be free, safe, and surrounded by nature. Dare to conquer the Patagonian sky!",
+    "night_tourism_title": "🔥 DARE TO EXPERIENCE “DARK TOURISM” IN PANGUIPULLI 🔥",
+    "night_tourism_description": "💀 This isn't just a tour… it's an experience that will make you feel alive. 💀 Do you dare to cross the border between the real and the unknown? At Río Sur Adventure, we invite you to a nocturnal journey where adrenaline, mystery, and the supernatural blend with the magic of southern Chile.",
+    "downtown_tour_title": "City and Surroundings Tour",
+    "downtown_tour_description": "Discover the soul of Panguipulli on a journey that goes beyond the tourist trail. Let yourself be guided by the stories its streets hold, meet the artisans who bring wood and wool to life, and savor the local culture in every corner. It's an immersion into the identity of a town that lives to the rhythm of its lakes and volcanoes.",
+    "kayaking_title": "SUP Adventure",
+    "kayaking_description": "Become one with the water as you glide on your Stand Up Paddle board across lakes of infinite calm. Explore secret bays, get close to local birdlife, and feel the deep peace that only silence and the gentle murmur of the water can offer. It is a meditation in motion, and it also includes a snack to recharge your energy!",
+    "view_details": "View Details",
+    "book_now": "Book Now",
+    "back_to_services": "Back to Services",
+    "contact_for_booking": "Contact for Booking",
+    "contact_by_email": "Contact by Email",
+    "details": {
+      "hiking": {
+        "title": "Hiking Circuits",
+        "options": [
+          {
+            "title": "Trekking Level 1 (Beginner)",
+            "description": "Open your senses to the Patagonian forest. On this family-friendly route, you will walk among ferns and coigües, listening to the song of the chucao welcoming you. It is an invitation to connect with nature gently, ideal for breathing fresh air and marveling at the first views of the lakes."
+          },
+          {
+            "title": "Trekking Level 2 (Family)",
+            "description": "Venture into trails that wind under a dense canopy of native trees. As you gain a little altitude, the forest reveals new secrets, and the sound of a woodpecker might surprise you. It's the perfect adventure for active families who want to feel the heart of the forest beating around them."
+          },
+          {
+            "title": "Trekking Level 3 (Intermediate)",
+            "description": "Challenge your limits by ascending slopes that will reward you with spectacular views. Here the forest changes, giving way to the majestic lengas. Keep your eyes open; with luck, you might spot the cunning of a fox exploring its territory. A route that demands effort and rewards it with unforgettable postcards."
+          },
+          {
+            "title": "Trekking Level 4 (Advanced)",
+            "description": "Conquer the heights on a trek for experts only. The trail becomes rugged and the air purer as you approach the summit. From here, with the wind on your face, you could witness the sovereign flight of a condor. It is the ultimate reward: the immensity of the Andes at your feet."
+          },
+          {
+            "title": "Filcumpulli Summit Ascent",
+            "description": "One of the most spectacular views in the area, with a 360° panorama of volcanoes and lakes."
+          }
+        ]
+      },
+      "lake_expedition": {
+        "title": "Seven Lakes Exploration",
+        "description": "Our expeditions take place on the Panguipulli, Calafquén, Riñihue, Pirihueico, Neltume, Pellaifa, and Pullinque lakes. Live an unforgettable experience connecting with nature through sailing and on SUP boards. Enjoy the 7 lakes of the region!",
+        "note": "Note: The cost of the trip may vary depending on the distance from our operations center in Panguipulli."
+      },
+      "hot_springs": {
+        "title": "Thermal Circuits",
+        "options_title": "Service Options",
+        "options": [
+          {
+            "title": "Geometric Hot Springs",
+            "description": "A work of art in the middle of nature. Wander its labyrinthine red wooden walkways and immerse yourself in thermal pools hidden in a wild ravine. A surreal experience that blends architecture and landscape."
+          },
+          {
+            "title": "Huilo Huilo Hot Springs",
+            "description": "In the heart of the Biological Reserve, these hot springs offer relaxation in a fairytale setting. Enjoy its indoor and outdoor pools while gazing at the majesty of the Patagonian forest."
+          },
+          {
+            "title": "Vergara Hot Springs",
+            "description": "A rustic and charming secret. Surrounded by pristine nature, they invite you to an authentic experience. Feel the waters revitalize your body with the soothing sound of the nearby river as your soundtrack. Pure disconnection."
+          },
+          {
+            "title": "El Rincón Hot Springs",
+            "description": "The perfect refuge for a total disconnection. With a family-friendly atmosphere and rustic pools, they are ideal for those seeking a direct, unpretentious contact with nature. A true corner of peace in the mountains."
+          }
+        ]
+      },
+      "downtown_tour": {
+        "title": "Local Culture and Tradition",
+        "description": "This tour will take you to know not only the center of Panguipulli but also the culture of artisans and local communities in towns like Coñaripe, Liquiñe, and Neltume. Discover the history and beauty of the lake area.",
+        "attractions_title": "Points of Interest",
+        "attractions": [
+          "Panguipulli Artisans' Fair",
+          "Panguipulli Waterfront and Pier",
+          "Visit to Mapuche communities",
+          "Neltume Wood Route",
+          "Beer Route"
+        ]
+      },
+      "rafting": {
+        "title": "Whitewater Rafting: Conquer the Wild Rivers!",
+        "options_title": "Service Options",
+        "difficulty_label": "Difficulty",
+        "view_on_map": "View on map",
+        "options": [
+          {
+            "title": "Fuy River: Turquoise Adrenaline",
+            "description": "Navigate the famous turquoise waters of the Fuy, a world-class river that will challenge you with intense rapids and technical runs. You'll flow through spectacular canyons, surrounded by the Valdivian rainforest. It's the crown jewel of rafting in the region, ideal for adventurers looking to take their excitement to the next level.",
+            "difficulty": "Class III-IV (Intermediate/Advanced)",
+            "map_url": "https://www.google.com/maps/place/R%C3%ADo+Fuy"
+          },
+          {
+            "title": "San Pedro River: The Family Adventure",
+            "description": "Perfect for beginners or a family adventure. The San Pedro offers a thrilling journey with friendly rapids and pools for swimming and playing. It's a scenic and fun trip, where teamwork combines with the breathtaking beauty of the lake landscape. Laughter and mild adrenaline guaranteed!",
+            "difficulty": "Class II-III (Beginner/Family)",
+            "map_url": "https://www.google.com/maps/place/R%C3%ADo+San+Pedro"
+          },
+          {
+            "title": "Enco River: The Hidden Corridor",
+            "description": "A hidden treasure connecting the Panguipulli and Riñihue lakes. The Enco offers a more intimate and wild rafting experience, with surprising rapids and privileged views of the volcanoes. It's a route for those looking to explore less-traveled places and feel a deep connection with the environment.",
+            "difficulty": "Class III (Intermediate)",
+            "map_url": "https://www.google.com/maps/place/R%C3%ADo+Enco"
+          }
+        ]
+      },
+      "biking": {
+        "title": "Your Bike Adventure in Panguipulli",
+        "description": "Become the master of your own expedition. We provide you with a top-quality mountain bike and a helmet, and you decide where to go and for how long. We offer full-day or half-day rentals so your adventure fits your plans perfectly. Looking for a relaxed ride along the waterfront or a challenge on forest trails? The choice is yours.",
+        "options_title": "Rental Options",
+        "options": [
+          {
+            "title": "Full-Day Rental: Limitless Adventure",
+            "description": "You have the bike for the entire day. Ideal for in-depth exploration, reaching distant viewpoints, or combining several routes. The only limit is your energy!"
+          },
+          {
+            "title": "Half-Day Rental: Efficient Exploration",
+            "description": "Perfect for a morning or afternoon getaway. You have enough time for a great ride, leaving you time for other activities. Maximum flexibility!"
+          }
+        ],
+        "attractions_title": "Suggested Routes for Your Adventure",
+        "attractions": [
+          "Panguipulli Waterfront and Pier",
+          "Monje Peninsula and its beaches",
+          "Climb to Rucatrehua Viewpoint",
+          "Chauquén and Coz-Coz Beaches",
+          "Scenic Route to Coñaripe (for experts)"
+        ]
+      },
+      "canopy": {
+        "title": "The Flight of the Condor Adventure",
+        "description": "Imagine being suspended in the air, right where only the condors dare to fly. Our canopy circuits invite you on an unforgettable journey through the canopy of the Valdivian rainforest. It's not just a zip line; it's an adrenaline shot, a lesson in ecology, and a whole new perspective on the forest. Feel the wind, hear nature's call, and let yourself be carried away by an emotion that will make you feel more alive than ever.",
+        "options_title": "Choose Your Flight Level",
+        "options": [
+          {
+            "title": "Family Circuit: Flight of the Chucao",
+            "description": "Ideal for starting your canopy adventure. A fun and safe tour with 5 lines of varying lengths and moderate heights. Perfect for enjoying with family, laughing out loud, and creating a lifelong memory. The little ones will feel like true explorers!"
+          },
+          {
+            "title": "Extreme Circuit: Flight of the Condor",
+            "description": "Designed for adrenaline lovers. This circuit features 8 lines, including longer, higher, and faster cables that cross small ravines and offer panoramic views of the lake and volcanoes. It's a challenge that will test your nerves and reward you with a feeling of absolute freedom."
+          }
+        ],
+        "safety_title": "Your Safety, Our Priority",
+        "safety_description": "Fly with complete confidence. We use state-of-the-art, internationally certified equipment (harnesses, helmets, pulleys, and carabiners). Our guides are experts trained in canopy operation and high-altitude rescue techniques. Before each flight, you will receive a detailed instructional briefing so that your only concern is to enjoy the ride."
+      },
+      "night_tourism": {
+        "title": "Dark Tourism Panguipulli – Where the Brave Meet.",
+        "description": "Get ready to live a night you will never forget. Dark forests, cemeteries under the stars, skin-crawling stories, and bonfires that hide ancient secrets. This isn't for everyone. It's for those who seek to feel, to vibrate, and to challenge the unknown.",
+        "attractions_title": "UNMISSABLE ACTIVITIES",
+        "attractions": [
+          "Horror stories and bonfire",
+          "Symbolic hunt",
+          "Stargazing in the cemetery",
+          "Paranormal experiences in the forest",
+          "Enigmatic stories"
+        ],
+        "note": "And to end the night… A huge party on the beach! Under the moon, with good music, fire, and drinks, you'll celebrate surviving a unique experience."
+      },
+      "horseback_riding": {
+        "title": "Horseback Riding Expedition",
+        "description": "This experience, led by our horseback riding guide, will transport you to a time before roaring engines. You will be immersed in the temperate rainforest of the Huilo-Huilo Biological Reserve and enjoy a natural shower from the misty waterfalls on the expedition. You will visit three key points of interest: the waterfalls, volcanic caves, and the trail of the spirits. This is a full-day activity for those who enjoy the peace of the forest and its surroundings."
+      }
+    }
+  },
+  "promotions": {
+    "title": "Our Adventure Packages",
+    "description": "Choose your next great experience with our all-inclusive packages. Accommodation, airport transfers, and unforgettable adventures await you.",
+    "includes_in_package": "This package includes the following activities:",
+    "bonus_track_title": "Bonus Track",
+    "bonus_track_description": "\"Stargazing\" (Only under optimal weather conditions)",
+    "includes": "All promotions include lodging and transfers from the airport to all destinations.",
+    "pricing_note_title": "Group Adventure, Price Per Person!",
+    "pricing_note_description": "Our packages are designed to be best enjoyed in good company. The price shown is per person. Gather your team of adventurers and get ready for an unforgettable experience!",
+    "select_date": "1. Choose the date of your adventure",
+    "select_people": "2. Choose the number of people",
+    "manage_adventure": "3. Manage your adventure via:",
+    "contact_via_whatsapp": "Whatsapp",
+    "contact_via_email": "Email",
+    "predefined_whatsapp_message": "Hello, Rio Sur Adventure team! 👋 I'm writing because I saw your incredible '{promotionName}' promotion on your website and I'm very interested. We are a group of {peopleCount} people and would like to know if you have availability to start on {date}. We would appreciate it if you could share more details about the package, including an itinerary, what's included in the price (transfers, accommodation, meals, etc.), and a final quote per person. Also, if you have other activities or services that you think could enrich our experience in the area, we would love to hear your recommendations. We look forward to your prompt response to coordinate our next adventure with you! Thank you very much! 🙏",
+    "predefined_email_subject": "Information and Quote Request: '{promotionName}' Promotion for {peopleCount} people",
+    "predefined_email_body": "Dear Rio Sur Adventure Team,\n\nI am writing on behalf of a group of {peopleCount} people. We have explored your website with great interest and are fascinated by the adventures you offer. In particular, we would like to request information and a quote for your '{promotionName}' promotion, with an estimated start date of {date}.\n\nTo help us plan our trip in the best way possible, we would be grateful if you could provide us with the following information:\n\n1.  **Availability confirmation** for a group of our size on the indicated date.\n2.  A **detailed day-by-day itinerary** for the promotion.\n3.  A **full breakdown of the services included** in the price (type of accommodation, transfers, specified meals, entrance fees, etc.) and any additional costs to consider.\n4.  A **formal quote** detailing the cost per person and the total for the group.\n5.  Details about the **booking process, cancellation policies, and payment methods**.\n\nFurthermore, if you believe there are other unmissable activities or experiences in the area that we could add to our trip, we would be delighted to receive your recommendations.\n\nWe thank you in advance for your time and the information you can provide. We look forward to your prompt response to take the next step in organizing this exciting adventure.\n\nBest regards,",
+    "packages": [
+      {
+        "id": "promo-aventurera",
+        "title": "Adventurer Promotion",
+        "duration": "4 days / 3 nights",
+        "activities": [
+          "Lake crossing",
+          "Trekking or horseback riding in Huilo-Huilo",
+          "Hot springs"
+        ],
+        "image": "promotion-summer"
+      },
+      {
+        "id": "promo-adrenalina",
+        "title": "Adrenaline Promotion",
+        "duration": "4 days / 3 nights",
+        "activities": [
+          "Rafting",
+          "Canopy",
+          "Trekking level 3",
+          "Lake crossing",
+          "Hot springs"
+        ],
+        "image": "promotion-group"
+      }
+    ]
+  },
+  "about": {
+    "title": "About Rio Sur Adventure",
+    "mission_title": "Our Mission",
+    "mission_text": "At Río Sur Adventure, we are dedicated to creating authentic tourist experiences that connect people with the nature, culture, and energy of southern Chile. Our mission is to provide safe, sustainable, and memorable adventures, guided by respect for the environment, love for Panguipulli, and a passion for sharing its unique beauty with the world.",
+    "vision_title": "Our Vision",
+    "vision_text": "To be the leading travel agency in southern Chile, recognized for inspiring travelers from all over to discover the magic of the Seven Lakes territory, promoting responsible tourism that protects and values the natural and cultural riches of our region.",
+    "why_choose_us_title": "Why Choose Us",
+    "why_choose_us_text": "Because at Río Sur Adventure, we don't just offer tours: we create memories. Our local guides are expert connoisseurs of the environment, passionate about adventure, and committed to your safety and well-being. We stand out for offering personalized, sustainable, and authentic experiences, where each trip becomes a story you'll want to live again.",
+    "panguipulli_magic_title": "A Magical Review of Panguipulli",
+    "panguipulli_magic_text": "In the heart of southern Chile, where the forests converse with the lakes and the volcanoes watch from a distance, lies Panguipulli, “land of pumas” in the Mapuche language. Founded on the shores of the lake of the same name, this city flourishes between crystal-clear waters and mist-covered mountains. In ancient times, the native peoples saw this place as a sacred portal between the earth and the spirits of the forest. Today, that same energy is breathed in every corner: in the sound of the wind among the coigües, in the warmth of its people, and in the adventures that await those who dare to explore its magic."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Have a question or are you ready to book your adventure? Send us a message, and we’ll get back to you shortly.",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_message": "Message",
+    "form_send": "Send Message",
+    "form_placeholder_name": "John Doe",
+    "form_placeholder_email": "john.doe@example.com",
+    "form_placeholder_message": "Tell us how we can help...",
+    "info_title": "Contact Information",
+    "info_label_address": "Address",
+    "info_label_phone": "Phone",
+    "info_label_email": "Email",
+    "info_address": "123 Adventure Lane, Patagonia, Chile",
+    "info_phone": "+56932484165",
+    "info_email": "aventura.sur.rsa@gmail.com",
+    "whatsapp_tooltip": "Message us",
+    "dialog_success_title": "Message Sent!",
+    "dialog_success_description": "Thank you for contacting us. We'll get back to you shortly.",
+    "dialog_success_close": "Close",
+    "toast_error_title": "Failed to send message",
+    "toast_error_description": "There was a problem with your request.",
+    "predefined_email_message": "Hello, Rio Sur Adventure team,\n\nI'm writing because I am very interested in your service: {serviceName}.\n\nI would like to receive complete information to plan my visit. I would appreciate it if you could detail the following:\n\n1.  **Availability and Schedules:** What dates and times do you have available for this service?\n2.  **Options and Levels:** Do you offer different modalities or levels of difficulty/duration for this activity?\n3.  **Rates:** What is the cost per person, and are there special rates for groups? (We are [NUMBER] people).\n4.  **Service Details:** What equipment is included, and what would we need to bring ourselves?\n\nI look forward to your prompt response to coordinate the adventure.\n\nThank you very much and best regards!"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "promotions": "Promociones",
+    "about": "Nosotros",
+    "contact": "Contáctanos"
+  },
+  "language": {
+    "current": "Español",
+    "switch": "Switch to English"
+  },
+  "home": {
+    "hero_title": "La Aventura te Espera en el Sur",
+    "hero_subtitle": "Descubre paisajes impresionantes y experiencias inolvidables con Rio Sur Adventure.",
+    "hero_cta": "Explora Nuestros Tours",
+    "featured_services_title": "Aventuras Populares",
+    "featured_promotion_title": "Nuevas Promociones Disponibles",
+    "featured_promotion_description": "Tenemos nuevos paquetes de aventura que incluyen estadía, traslados y experiencias inolvidables. ¡No te los pierdas!",
+    "featured_promotion_cta": "Ver Promociones"
+  },
+  "services": {
+    "title": "Nuestros Servicios de Aventura",
+    "description": "Ofrecemos una variedad de tours y actividades para todos los niveles de aventureros. Cada experiencia está diseñada para ser segura, emocionante y memorable. Además, para recargar energías, ¡todos nuestros servicios incluyen un snack de regalo!",
+    "hiking_title": "Senderismo de Montaña",
+    "hiking_description": "Explora senderos milenarios y bosques nativos en rutas para todos los niveles. Conecta con la naturaleza y descubre vistas panorámicas que te dejarán sin aliento. La montaña te espera.",
+    "biking_title": "Renta de Bicicleta: Tu Aventura, Tu Ritmo",
+    "biking_description": "Recorre Panguipulli a tu propio ritmo. Diseña tu ruta por lagos y bosques con nuestro equipo de alta gama. Vive una aventura sobre dos ruedas con total libertad y seguridad.",
+    "rafting_title": "Rafting de Aguas Blancas: ¡Conquista los Ríos Salvajes!",
+    "rafting_description": "Siente la adrenalina de los rápidos del sur de Chile con nuestros guías expertos. Una aventura en equipo llena de acción, ideal para quienes buscan un desafío en aguas bravas.",
+    "horseback_riding_title": "Expedición a Caballo",
+    "horseback_riding_description": "Galopa por praderas y senderos con vistas a los volcanes. Una experiencia que te conecta con la tradición del campo chileno y la nobleza del caballo para un día memorable.",
+    "lake_expedition_title": "Travesías por los 7 Lagos",
+    "lake_expedition_description": "Navega por las aguas turquesas de la región. Explora islas secretas y playas vírgenes en kayak o SUP. Admira el paisaje desde una perspectiva única en una travesía inolvidable.",
+    "hot_springs_title": "Termas",
+    "hot_springs_description": "Relájate en aguas termales que brotan de los Andes. Te llevamos a los mejores centros, rodeados de naturaleza virgen, para una experiencia de descanso y renovación total.",
+    "canopy_title": "Canopy: ¡Vuela Sobre el Corazón del Bosque!",
+    "canopy_description": "Vuela sobre el dosel del bosque y siente la libertad. Deslízate por cables a gran altura, disfrutando de vistas espectaculares y una dosis segura de pura adrenalina.",
+    "night_tourism_title": "🔥 ATRÉVETE A VIVIR EL “DARK TURISMO” EN PANGUIPULLI 🔥",
+    "night_tourism_description": "Explora el lado misterioso de Panguipulli bajo las estrellas. Un recorrido nocturno donde las leyendas locales y los sonidos de la noche son los protagonistas de una experiencia inolvidable.",
+    "downtown_tour_title": "Tour por la Ciudad y Alrededores",
+    "downtown_tour_description": "Descubre la historia y cultura de Panguipulli. Visita la Casona Cultural, conoce a artesanos locales y saborea la gastronomía de la zona en un tour para toda la familia.",
+    "kayaking_title": "Aventura en SUP",
+    "kayaking_description": "Deslízate en silencio sobre lagos cristalinos en Stand Up Paddle. Conéctate con la flora y fauna acuática mientras remas a tu propio ritmo. Una actividad para encontrar la paz.",
+    "view_details": "Ver Detalles",
+    "back_to_services": "Volver a Servicios",
+    "contact_for_booking": "Contactar para Agendar",
+    "contact_by_email": "Contactar por Correo",
+    "predefined_whatsapp_message": "¡Hola, equipo de Río Sur Adventure! 👋 Les escribo porque estoy interesado/a en su servicio de {serviceName} y me gustaría recibir más información. ¡Gracias!",
+    "details": {
+      "hiking": {
+        "title": "CONQUISTA LA CUMBRE: Expediciones de Senderismo",
+        "description": [
+          "¿Sientes el llamado de la montaña? Esto no es un paseo por el parque. Es un desafío contra la gravedad, un diálogo con la roca y el viento.",
+          "Te guiaremos por senderos que se elevan hacia el cielo, donde el aire es más puro y tus pulmones arden con el esfuerzo. Cada paso es una victoria.",
+          "La recompensa: vistas que humillan a los mapas y una sensación de logro que llevarás contigo para siempre. Toca las nubes. Conquista tu cumbre."
+        ],
+        "options_title": "Elige tu Próxima Cumbre",
+        "difficulty_label": "Nivel de Desafío",
+        "options": [
+          {
+            "title": "Bautismo de Montaña: Mirador Michimahuida",
+            "description": "Inicia tu leyenda aquí. Una ruta que te introduce al lenguaje de la montaña, perfecta para aclimatar el espíritu aventurero. Las vistas del volcán son solo el comienzo de tu nueva adicción.",
+            "difficulty": "Iniciación"
+          },
+          {
+            "title": "Ascenso al Olimpo: Volcán Mocho-Choshuenco",
+            "description": "Para los que no temen al cansancio y buscan la gloria. Una jornada épica hacia el techo de la región. Arriba, solo el viento, el silencio y un océano de cumbres a tus pies. Requiere coraje.",
+            "difficulty": "Legendario"
+          },
+          {
+            "title": "El Secreto del Bosque: Sendero de los Espíritus",
+            "description": "Camina donde la magia es real. Un viaje a través de cascadas y esculturas místicas que susurran historias antiguas. No solo es caminar, es sentir la energía de la tierra mapuche.",
+            "difficulty": "Místico"
+          }
+        ],
+        "safety_title": "Tu Vida es la Misión",
+        "safety_description": "La montaña exige respeto, y nosotros se lo damos. Nuestros guías son guardianes certificados en WFR, equipados para cualquier eventualidad. Antes de cada ascenso, realizamos un juramento de seguridad. No dejamos nada al azar. Tu única preocupación será poner un pie delante del otro."
+      },
+      "rafting": {
+        "title": "DOMINA EL RÍO: Batalla de Rafting en Aguas Salvajes",
+        "description": [
+          "Olvídate de los paseos tranquilos. Esto es una guerra contra la furia del río. Sentirás el estruendo del agua, los golpes de las olas contra la balsa y la adrenalina pura bombeando en tus venas.",
+          "Rema como si tu vida dependiera de ello, porque lo hará. Trabaja en equipo, grita, ríe y lucha.",
+          "Saldrás del río diferente: más fuerte, más valiente, un verdadero conquistador de aguas bravas."
+        ],
+        "safety_title": "En la Furia del Agua, Somos tu Escudo",
+        "safety_description": "El caos del río es nuestro campo de juego. Cada guía es un general de aguas bravas, certificado por la IRF y acompañado por kayakistas de élite que son tu sombra en el agua. El equipo es de grado militar, la charla de seguridad es un manifiesto de supervivencia. Aquí, la seguridad no es una promesa, es una obsesión."
+      },
+      "horseback_riding": {
+        "title": "GALOPE A LA LIBERTAD: Expedición a Caballo",
+        "description": [
+          "Esto no es un paseo de ponis. Es sentir el poder de una bestia noble bajo tu control, galopando a través de praderas abiertas con el viento en la cara y la Cordillera como telón de fondo.",
+          "Eres un pionero, un explorador, reconquistando la Patagonia al ritmo del galope.",
+          "Al final del día, el olor a cuero y sudor se mezclará con el del fuego, mientras compartimos un asado campestre bajo las estrellas. Esto es libertad en su estado más puro."
+        ]
+      },
+      "kayaking": {
+        "title": "SECRETOS DEL LAGO: Travesía Mística en SUP & Kayak",
+        "description": [
+          "El lago tiene secretos, y solo los revela a quienes se acercan en silencio. Deslízate sobre un espejo de agua, donde el único sonido es tu remo cortando la superficie.",
+          "Explora islas desiertas, playas a las que nadie más puede llegar y bahías donde la naturaleza sigue intacta. No es un ejercicio, es una meditación en movimiento, una conexión profunda con el alma acuática de Panguipulli.",
+          "Incluye un snack para recargar el cuerpo, porque el espíritu ya estará lleno."
+        ]
+      },
+      "lake_expedition": {
+        "title": "ODISEA DE LOS 7 LAGOS: Travesía Épica por Aguas Ancestrales",
+        "description": [
+          "Esto no es un tour, es una saga. Una inmersión total en la ruta escénica que da fama mundial a esta tierra. Siente la inmensidad de los Andes reflejada en siete espejos de agua legendarios.",
+          "Navegarás, explorarás y conquistarás cada uno de ellos, descubriendo sus playas secretas, sus islas silenciosas y la energía única que emana de sus profundidades. Es un viaje al origen, al corazón líquido de la Patagonia.",
+          "Prepárate para una experiencia que redefinirá tu concepto de 'paisaje'."
+        ],
+        "options_title": "LOS 7 ANILLOS DE AGUA: El Corazón de la Ruta",
+        "options": [
+          {
+            "title": "Lago Panguipulli: El Espíritu del Puma",
+            "description": "El anfitrión. Sus aguas custodian la ciudad y reflejan el volcán Choshuenco. Es el punto de partida, donde la energía de la 'tierra de pumas' te da la bienvenida."
+          },
+          {
+            "title": "Lago Calafquén: El Otro Lago",
+            "description": "Un paraíso de playas y pueblos pintorescos. Sus aguas compartidas entre Panguipulli y Villarrica son famosas por su calidez y sus rincones llenos de vida."
+          },
+          {
+            "title": "Lago Riñihue: El Lugar del Colihue",
+            "description": "El gigante tranquilo. El último gran lago del circuito, cuyas aguas poderosas dieron forma a la historia con el 'Riñihuazo'. Hoy es un remanso de paz y naturaleza imponente."
+          },
+          {
+            "title": "Lago Pirihueico: Charco de Nieve",
+            "description": "El más salvaje e indómito. Un fiordo de agua dulce encajonado entre montañas boscosas que te transporta a otra era. Cruzarlo en barcaza es una experiencia en sí misma."
+          },
+          {
+            "title": "Lago Neltume: El Alma Rebelde",
+            "description": "Pequeño en tamaño, pero gigante en belleza y carácter. Un lago de aguas inquietas rodeado de la selva valdiviana en su máxima expresión."
+          },
+          {
+            "title": "Lago Pellaifa: Escarcha de la Helada",
+            "description": "El gemelo tranquilo de Calafquén. Un santuario para la observación de aves y la conexión con la naturaleza más serena, ideal para una pausa en SUP o kayak."
+          },
+          {
+            "title": "Lago Pullinque: Ojos de Diablo",
+            "description": "El más misterioso. Un lago intervenido por la mano del hombre pero que no ha perdido su encanto. Sus aguas oscuras esconden leyendas y reflejan un paisaje sobrecogedor."
+          }
+        ],
+        "note": "El valor de la travesía puede variar según la distancia desde nuestro centro de operaciones en Panguipulli y las embarcaciones seleccionadas.",
+        "safety_title": "NAVEGANTES, NO PASAJEROS",
+        "safety_description": "En estas aguas, tú eres parte de la tripulación. Nuestros guías son almirantes de la Patagonia, expertos en rescate y meteorología. Te equipamos con lo mejor y te entrenamos para ser un explorador autónomo. Tu seguridad es la brújula que guía cada remada."
+      },
+      "hot_springs": {
+        "title": "RENACER EN EL VOLCÁN: Inmersión en Termas Milenarias",
+        "description": [
+          "Esto no es un spa. Es un ritual. Sumérgete en aguas que nacen del corazón ardiente de la tierra, cargadas de minerales y energía volcánica.",
+          "Deja que el calor abrace tus músculos cansados y que el vapor limpie tu alma. Rodeado de bosques silenciosos y el murmullo del agua, sentirás cómo el mundo exterior se desvanece.",
+          "Saldrás renovado, renacido, listo para la próxima batalla."
+        ],
+        "options_title": "Elige tu Santuario de Fuego y Agua",
+        "options": [
+          {
+            "title": "El Laberinto Zen: Termas Geométricas",
+            "description": "Una obra maestra arquitectónica en mitad de la nada. Camina por pasarelas rojas suspendidas sobre un arroyo humeante y encuentra tu pozón perfecto. Es una experiencia surrealista y profundamente sanadora."
+          },
+          {
+            "title": "El Lujo Salvaje: Termas de Huilo Huilo",
+            "description": "La perfecta armonía entre el confort de un resort y la indómita belleza de la selva patagónica. Relájate con estilo después de un día de exploración intensa."
+          },
+          {
+            "title": "El Origen: Termas Vergara y El Rincón",
+            "description": "Para los puristas. Pozones rústicos, barro curativo y el sonido del río como única música de fondo. Es la experiencia termal en su estado más crudo y auténtico."
+          }
+        ]
+      },
+      "canopy": {
+        "title": "VUELA SOBRE EL FIN DEL MUNDO: Adrenalina en el Canopy",
+        "description": [
+          "¿Miedo a las alturas? ¡Perfecto! El canopy no es para volar, es para conquistar el vértigo.",
+          "Lánzate al vacío y vuela como un cóndor sobre el dosel del bosque, con el corazón en la garganta y una vista que te robará el aliento.",
+          "Es una dosis de adrenalina pura, una inyección de libertad que te dejará temblando de emoción. No solo verás el bosque, lo dominarás desde el cielo."
+        ]
+      },
+       "night_tourism": {
+        "title": "🔥 ATRÉVETE A VIVIR EL “DARK TURISMO” EN PANGUIPULLI 🔥",
+        "description": [
+          "💀 No es un simple tour… es una experiencia que te hará sentir vivo. 💀",
+          "¿Te atreves a cruzar la frontera entre lo real y lo desconocido? En Río Sur Adventure te invitamos a una travesía nocturna donde la adrenalina, el misterio y lo sobrenatural se mezclan con la magia del sur de Chile.",
+          "🌲 Bosques oscuros, cementerios bajo las estrellas, relatos que erizan la piel y fogatas que esconden secretos antiguos. Prepárate para vivir una noche que no olvidarás jamás."
+        ],
+        "options_title": "🔥 ACTIVIDADES IMPERDIBLES:",
+        "options": [
+          {
+            "title": "👻 Cuentos de terror y fogata",
+            "description": "Cuando el sol cae y las sombras se alargan, el fuego se enciende… y con él, las historias que jamás querrás escuchar solo."
+          },
+          {
+            "title": "🏹 Cacería simbólica",
+            "description": "Siente la tensión en el aire, los sonidos del bosque y esa sensación de que… algo te observa."
+          },
+          {
+            "title": "🌌 Baño de estrellas en el cementerio",
+            "description": "Un momento de conexión entre lo terrenal y lo eterno, donde el silencio cobra voz."
+          },
+          {
+            "title": "🌫️ Experiencias paranormales en el bosque de Panguipulli",
+            "description": "Lo inexplicable cobra forma entre la neblina… ¿te atreves a mirar?"
+          },
+          {
+            "title": "🕯️ Historias enigmáticas",
+            "description": "Relatos reales, misterios sin resolver, almas que aún rondan los caminos del sur."
+          }
+        ],
+        "safety_title": "Y para cerrar la noche… ¡Gran carrete en la playa!",
+        "safety_description": "Bajo la luna, con buena música, fuego y tragos, celebrarás haber sobrevivido a una experiencia única.\n\n💥 No es para cualquiera. Es para quienes buscan sentir, vibrar y desafiar lo desconocido.\n\n🌑 Dark Turismo Panguipulli – Donde los valientes se encuentran."
+      },
+      "downtown_tour": {
+        "title": "EL ALMA DE PANGUIPULLI: Un Viaje a la Cultura Local",
+        "description": [
+          "Cualquiera puede tomar una foto. Pocos pueden capturar el alma de un lugar. Te llevaremos más allá de las postales, a las calles donde late el corazón de Panguipulli.",
+          "Conocerás a los artesanos que hacen hablar a la madera, escucharás las leyendas que se esconden en sus muros y probarás los sabores auténticos que no aparecen en las guías turísticas.",
+          "No es un tour, es una inmersión cultural."
+        ],
+        "attractions_title": "Puntos de Conexión",
+        "attractions": [
+          "Casona Cultural: El epicentro del arte local.",
+          "Muelle de Panguipulli: Donde el lago cuenta sus historias.",
+          "Iglesia San Sebastián: Arquitectura que desafía el tiempo.",
+          "Feria de Artesanos: El lugar para encontrar tesoros únicos.",
+          "Fábrica de Chocolate: El sabor dulce de la Patagonia.",
+          "Mirador Cerro Pitrén: La ciudad a tus pies.",
+          "Ruta de la Cerveza: El sabor artesanal de la zona."
+        ]
+      },
+      "biking": {
+        "title": "TRAZA TU PROPIO MAPA: Aventura en Mountain Bike",
+        "description": [
+          "El asfalto es para los turistas. Nosotros preferimos el polvo y el barro. Te damos una máquina de guerra de dos ruedas y un mapa lleno de posibilidades. El resto depende de ti.",
+          "Siente el ardor en tus piernas mientras asciendes por senderos olvidados y la velocidad pura en descensos que pondrán a prueba tu coraje.",
+          "Esto no es un paseo. Es la libertad de conquistar la tierra a tu propio ritmo."
+        ],
+        "options_title": "Elige tu Territorio",
+        "difficulty_label": "Nivel",
+        "options": [
+          {
+            "title": "Ruta del Lago: Belleza Escénica",
+            "description": "Una ruta para disfrutar del paisaje sin que tus piernas te odien al día siguiente. Vistas panorámicas, playas secretas y la brisa del lago en tu cara.",
+            "difficulty": "Explorador"
+          },
+          {
+            "title": "El Reto del Titán: Vuelta al Lago Calafquén",
+            "description": "Un maratón de un día para ciclistas forjados en acero. Asfalto, ripio, subidas infernales y descensos de vértigo. Completarla es una medalla de honor.",
+            "difficulty": "Titán"
+          }
+        ]
+      }
+    }
+  },
+  "promotions": {
+    "title": "Nuestros Paquetes de Aventura",
+    "description": "Elige tu próxima gran experiencia con nuestros paquetes todo incluido. Alojamiento, traslados desde el aeropuerto y aventuras inolvidables te esperan.",
+    "includes_in_package": "Este paquete incluye las siguientes actividades:",
+    "bonus_track_title": "Bonus Track",
+    "bonus_track_description": "\"Vista a las estrellas\" (Solo en condiciones óptimas de clima)",
+    "includes": "Todas las promociones incluyen alojamiento y traslados desde el aeropuerto hacia todos los destinos.",
+    "pricing_note_title": "¡Aventura en Grupo, Precio por Persona!",
+    "pricing_note_description": "Nuestros paquetes están diseñados para ser disfrutados al máximo en compañía. El precio indicado es por persona. ¡Reúne a tu equipo de aventureros y prepárense para una experiencia inolvidable!","select_date": "1. Elige la fecha de tu aventura",
+    "select_people": "2. Elige la cantidad de personas",
+    "manage_adventure": "3. Gestiona tu aventura por:",
+    "contact_via_whatsapp": "Whatsapp",
+    "contact_via_email": "Correo",
+    "predefined_whatsapp_message": "¡Hola, equipo de Río Sur Adventure! 👋 Les escribo porque he visto su increíble promoción '{promotionName}' en su sitio web y me ha interesado mucho. Somos un grupo de {peopleCount} personas y nos gustaría saber si tienen disponibilidad para comenzar en la fecha {date}. Agradeceríamos si pudieran compartirnos más detalles sobre el paquete, incluyendo un itinerario, lo que está incluido en el precio (traslados, alojamiento, comidas, etc.), y una cotización final por persona. También, si tuvieran otras actividades o servicios que crean que podrían enriquecer nuestra experiencia en la zona, nos encantaría conocer sus recomendaciones. ¡Quedamos muy atentos a su pronta respuesta para poder coordinar nuestra próxima aventura con ustedes! ¡Muchas gracias! 🙏",
+    "predefined_email_subject": "Solicitud de Información y Cotización: Promoción '{promotionName}' para {peopleCount} personas",
+    "predefined_email_body": "Estimado equipo de Río Sur Adventure,\n\nLes escribo en nombre de un grupo de {peopleCount} personas. Hemos explorado con gran interés su sitio web y estamos fascinados con las aventuras que ofrecen. En particular, nos gustaría solicitar información y una cotización para su promoción '{promotionName}', con fecha de inicio estimada el {date}.\n\nPara ayudarnos a planificar nuestro viaje de la mejor manera, les agradeceríamos si pudieran proporcionarnos la siguiente información:\n\n1.  **Confirmación de disponibilidad** para un grupo de nuestro tamaño en la fecha indicada.\n2.  Un **itinerario detallado** día por día para la promoción.\n3.  Un **desglose completo de los servicios incluidos** en el precio (tipo de alojamiento, traslados, comidas especificadas, entradas, etc.) y cualquier costo adicional a considerar.\n4.  Una **cotización formal** detallando el valor por persona y el total para el grupo.\n5.  Detalles sobre el **proceso de reserva, políticas de cancelación y métodos de pago**.\n\nAdemás, si consideran que hay otras actividades o experiencias imperdibles en la zona que pudiéramos añadir a nuestro viaje, estaríamos encantados de recibir sus recomendaciones.\n\nAgradecemos de antemano su tiempo y la información que puedan brindarnos. Quedamos a la espera de su pronta respuesta para dar el siguiente paso en la organización de esta emocionante aventura.\n\nSaludos cordiales,",
+    "packages": [
+      {
+        "id": "promo-aventurera",
+        "title": "Promoción Aventurera",
+        "duration": "4 días / 3 noches",
+        "activities": [
+          "Travesía en el lago",
+          "Trekking o cabalgata por Huilo-Huilo",
+          "Termas"
+        ],
+        "image": "promotion-summer"
+      },
+      {
+        "id": "promo-adrenalina",
+        "title": "Promoción Adrenalina",
+        "duration": "4 días / 3 noches",
+        "activities": [
+          "Rafting",
+          "Canopy",
+          "Trekking nivel 3",
+          "Travesía en el lago",
+          "Termas"
+        ],
+        "image": "promotion-group"
+      },
+      {
+        "id": "promo-parejas",
+        "title": "Promoción Parejas",
+        "duration": "4 días / 3 noches",
+        "activities": [
+          "Travesía SUP 7 lagos",
+          "Cabalgata",
+          "Termas",
+          "Dark Turismo (Bosques Encantados)"
+        ],
+        "note": "Válido hasta el 21 de diciembre!",
+        "image": "promotion-couples"
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre Rio Sur Adventure",
+    "mission_title": "Nuestra Misión",
+    "mission_text": "En Río Sur Adventure nos dedicamos a crear experiencias turísticas auténticas que conectan a las personas con la naturaleza, la cultura y la energía del sur de Chile. Nuestra misión es brindar aventuras seguras, sostenibles y memorables, guiadas por el respeto al entorno, el amor por Panguipulli y la pasión por compartir su belleza única con el mundo.",
+    "vision_title": "Nuestra Visión",
+    "vision_text": "Ser la agencia de viajes líder del sur de Chile, reconocida por inspirar a viajeros de todas partes a descubrir la magia del territorio de los Siete Lagos, promoviendo un turismo responsable que proteja y valore las riquezas naturales y culturales de nuestra región.",
+    "why_choose_us_title": "Por Qué Elegirnos",
+    "why_choose_us_text": "Porque en Río Sur Adventure no solo ofrecemos tours: creamos recuerdos. Nuestros guías locales son expertos conocedores del entorno, apasionados por la aventura y comprometidos con tu seguridad y bienestar. Nos diferenciamos por ofrecer experiencias personalizadas, sostenibles y llenas de autenticidad, donde cada viaje se transforma en una historia que querrás volver a vivir.",
+    "panguipulli_magic_title": "Reseña Mágica de Panguipulli",
+    "panguipulli_magic_text": "En el corazón del sur de Chile, donde los bosques conversan con los lagos y los volcanes vigilan desde la distancia, se encuentra Panguipulli, “tierra de pumas” en lengua mapuche. Fundada a orillas del lago del mismo nombre, esta ciudad florece entre aguas cristalinas y montañas cubiertas de niebla. Antiguamente, los pueblos originarios veían en este lugar un portal sagrado entre la tierra y los espíritus del bosque. Hoy, esa misma energía se respira en cada rincón: en el sonido del viento entre los coigües, en la calidez de su gente y en las aventuras que esperan a quienes se atrevan a explorar su magia."
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "description": "¿Tienes alguna pregunta o estás listo para reservar tu aventura? Envíanos un mensaje y nos pondremos en contacto contigo en breve.",
+    "form_name": "Nombre",
+    "form_email": "Correo Electrónico",
+    "form_message": "Mensaje",
+    "form_send": "Enviar Mensaje",
+    "form_placeholder_name": "Juan Pérez",
+    "form_placeholder_email": "juan.perez@ejemplo.com",
+    "form_placeholder_message": "Cuéntanos cómo podemos ayudarte...",
+    "info_title": "Información de Contacto",
+    "info_label_address": "Dirección",
+    "info_label_phone": "Teléfono",
+    "info_label_email": "Correo",
+    "info_address": "123 Adventure Lane, Patagonia, Chile",
+    "info_phone": "+56932484165",
+    "info_email": "aventura.sur.rsa@gmail.com",
+    "whatsapp_tooltip": "Escríbenos",
+    "dialog_success_title": "¡Mensaje Enviado!",
+    "dialog_success_description": "Gracias por contactarnos. Te responderemos en breve.",
+    "dialog_success_close": "Cerrar",
+    "toast_error_title": "Error al enviar el mensaje",
+    "toast_error_description": "Hubo un problema con tu solicitud.",
+    "predefined_email_message": "Hola, equipo de Río Sur Adventure,\n\nLes escribo porque estoy muy interesado/a en su servicio de: {serviceName}.\n\nMe gustaría recibir información completa para poder planificar mi visita. Agradecería si pudieran detallarme lo siguiente:\n\n1.  **Disponibilidad y Horarios:** ¿Qué fechas y horarios tienen disponibles para este servicio?\n2.  **Opciones y Niveles:** ¿Ofrecen distintas modalidades o niveles de dificultad/duración para esta actividad?\n3.  **Tarifas:** ¿Cuál es el costo por persona y si existen tarifas especiales para grupos? (Somos [NÚMERO] personas).\n4.  **Detalles del Servicio:** ¿Qué equipamiento está incluido y qué necesitaríamos llevar nosotros?\n\nQuedo a la espera de su pronta respuesta para poder coordinar la aventura.\n\n¡Muchas gracias y saludos cordiales!"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

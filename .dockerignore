@@ -1,0 +1,10 @@
+node_modules
+.next
+dist
+out
+.git
+npm-debug.log
+yarn-error.log
+*.log
+Dockerfile*
+docker-compose*.yml
