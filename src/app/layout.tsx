@@ -19,6 +19,9 @@ const playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: 'Rio Sur Adventure',
   description: 'Descubre paisajes impresionantes y experiencias inolvidables en el sur de Chile con Rio Sur Adventure. Ofrecemos tours de senderismo, rafting, kayak y más.',
+  icons: {
+    icon: '/images/logo.png',
+  },
 };
 
 export default function RootLayout({

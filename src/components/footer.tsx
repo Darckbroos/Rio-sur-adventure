@@ -20,7 +20,7 @@ export function Footer({ dict }: Props) {
             <Link href="#" className="text-muted-foreground hover:text-primary">
               <Facebook className="h-6 w-6" />
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary">
+            <Link href="https://www.instagram.com/riosuradventure?utm_source=qr&igsh=MWloMzQwYnEwYWVoNg%3D%3D" className="text-muted-foreground hover:text-primary">
               <Instagram className="h-6 w-6" />
             </Link>
             <Link href="#" className="text-muted-foreground hover:text-primary">
