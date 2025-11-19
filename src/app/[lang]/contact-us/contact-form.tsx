@@ -57,10 +57,9 @@ type Props = {
     toast_error_description: string;
     predefined_email_message: string;
   };
-  serviceName?: string;
 };
 
-export function ContactForm({ dict, serviceName }: Props) {
+export function ContactForm({ dict }: Props) {
   const searchParams = useSearchParams();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
@@ -76,13 +75,12 @@ export function ContactForm({ dict, serviceName }: Props) {
   });
 
   useEffect(() => {
-    const messageFromUrl = searchParams.get('message');
-    if (messageFromUrl) {
-      form.setValue('message', decodeURIComponent(messageFromUrl));
-    } else if (serviceName) {
-      form.setValue('message', `${dict.predefined_email_message}${decodeURIComponent(serviceName)}`);
+    const serviceFromUrl = searchParams.get('service');
+    if (serviceFromUrl) {
+      const message = dict.predefined_email_message.replace('{serviceName}', decodeURIComponent(serviceFromUrl));
+      form.setValue('message', message);
     }
-  }, [serviceName, searchParams, form, dict.predefined_email_message]);
+  }, [searchParams, form, dict.predefined_email_message]);
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
