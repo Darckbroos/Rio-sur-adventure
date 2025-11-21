@@ -50,28 +50,27 @@
     "details": {
       "hiking": {
         "title": "Hiking Circuits",
+        "options_title": "Choose Your Next Summit",
+        "difficulty_label": "Challenge Level",
         "options": [
           {
-            "title": "Trekking Level 1 (Beginner)",
-            "description": "Open your senses to the Patagonian forest. On this family-friendly route, you will walk among ferns and coigües, listening to the song of the chucao welcoming you. It is an invitation to connect with nature gently, ideal for breathing fresh air and marveling at the first views of the lakes."
+            "title": "Mountain Baptism: Ascent to Filcumpulli",
+            "description": "Start your legend here. Conquer the Filcumpulli viewpoint and get a 360° view of volcanoes and lakes. It's the first great achievement of your journey, perfect for awakening the adventurous spirit.",
+            "difficulty": "Initiation"
           },
           {
-            "title": "Trekking Level 2 (Family)",
-            "description": "Venture into trails that wind under a dense canopy of native trees. As you gain a little altitude, the forest reveals new secrets, and the sound of a woodpecker might surprise you. It's the perfect adventure for active families who want to feel the heart of the forest beating around them."
+            "title": "Olympus Ascent: Mocho-Choshuenco Volcano",
+            "description": "For those who do not fear fatigue and seek glory. An epic journey to the roof of the region. Up there, only the wind, silence, and an ocean of peaks at your feet. It requires courage.",
+            "difficulty": "Legendary"
           },
           {
-            "title": "Trekking Level 3 (Intermediate)",
-            "description": "Challenge your limits by ascending slopes that will reward you with spectacular views. Here the forest changes, giving way to the majestic lengas. Keep your eyes open; with luck, you might spot the cunning of a fox exploring its territory. A route that demands effort and rewards it with unforgettable postcards."
-          },
-          {
-            "title": "Trekking Level 4 (Advanced)",
-            "description": "Conquer the heights on a trek for experts only. The trail becomes rugged and the air purer as you approach the summit. From here, with the wind on your face, you could witness the sovereign flight of a condor. It is the ultimate reward: the immensity of the Andes at your feet."
-          },
-          {
-            "title": "Filcumpulli Summit Ascent",
-            "description": "One of the most spectacular views in the area, with a 360° panorama of volcanoes and lakes."
+            "title": "The Secret of the Forest: Trail of the Spirits",
+            "description": "Walk where magic is real. A journey through waterfalls and mystical sculptures that whisper ancient stories. It's not just walking; it's feeling the energy of the Mapuche land.",
+            "difficulty": "Mystical"
           }
-        ]
+        ],
+        "safety_title": "Your Life is the Mission",
+        "safety_description": "The mountain demands respect, and we give it. Our guides are WFR-certified guardians, equipped for any eventuality. Before each ascent, we conduct a safety oath. We leave nothing to chance. Your only concern will be to put one foot in front of the other."
       },
       "lake_expedition": {
         "title": "Seven Lakes Exploration",
