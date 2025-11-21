@@ -3,13 +3,13 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { TicketPercent, Star, Info, Users, CalendarDays, Mail, MessageSquare } from 'lucide-react';
+import { TicketPercent, Star, Info, Users, CalendarDays, Mail, MessageSquare, AlertTriangle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Calendar } from '@/components/ui/calendar';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { ImageHandler } from '@/components/ui/image-handler';
-
+import { es, enUS } from 'date-fns/locale';
 
 // These types are derived from what getDictionary returns
 type Dictionary = any;
@@ -23,11 +23,15 @@ interface PromotionsClientPageProps {
 
 export function PromotionsClientPage({ dict, promotions, lang }: PromotionsClientPageProps) {
   const [selections, setSelections] = useState<{[key: string]: { date?: Date, people: number } }>({});
+  const locale = lang === 'es' ? es : enUS;
 
   useEffect(() => {
     const initialSelections: {[key: string]: { date?: Date, people: number }} = {};
     promotions.forEach(p => {
-      initialSelections[p.id] = { date: new Date(), people: 2 };
+      initialSelections[p.id] = { 
+        date: new Date(), 
+        people: p.id === 'promo-parejas' ? 2 : 1 
+      };
     });
     setSelections(initialSelections);
   }, [promotions]);
@@ -75,6 +79,8 @@ export function PromotionsClientPage({ dict, promotions, lang }: PromotionsClien
     return <div className="container mx-auto px-4 py-16 text-center">Loading...</div>;
   }
 
+  const visiblePromotions = promotions.filter(p => p.id !== 'promo-aventurera');
+
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
@@ -83,7 +89,7 @@ export function PromotionsClientPage({ dict, promotions, lang }: PromotionsClien
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {promotions.map((promo) => (
+        {visiblePromotions.map((promo) => (
             <Card key={promo.id} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="relative w-full">
                   <ImageHandler
@@ -116,6 +122,13 @@ export function PromotionsClientPage({ dict, promotions, lang }: PromotionsClien
                         ))}
                       </ul>
                     </div>
+                    
+                    {promo.note && (
+                      <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4" role="alert">
+                        <p className="font-bold flex items-center gap-2"><AlertTriangle className="h-5 w-5"/> Oferta Especial</p>
+                        <p>{promo.note}</p>
+                      </div>
+                    )}
 
                     <Card className="bg-muted/50 p-4">
                       <h4 className="font-bold text-sm text-accent-foreground/90">{dict.promotions.pricing_note_title}</h4>
@@ -131,6 +144,7 @@ export function PromotionsClientPage({ dict, promotions, lang }: PromotionsClien
                             selected={selections[promo.id]?.date}
                             onSelect={(date) => handleSelectionChange(promo.id, { date })}
                             className="rounded-md border p-0"
+                            locale={locale}
                           />
                         </div>
                         <div className='space-y-2'>
@@ -138,10 +152,12 @@ export function PromotionsClientPage({ dict, promotions, lang }: PromotionsClien
                             <Input
                                 id={`people-${promo.id}`}
                                 type="number"
-                                min="1"
-                                value={selections[promo.id]?.people || 2}
+                                min={promo.id === 'promo-parejas' ? 2 : 1}
+                                max={promo.id === 'promo-parejas' ? 2 : undefined}
+                                value={selections[promo.id]?.people || (promo.id === 'promo-parejas' ? 2 : 1)}
                                 onChange={(e) => handleSelectionChange(promo.id, { people: parseInt(e.target.value, 10) || 1 })}
                                 className="w-full"
+                                disabled={promo.id === 'promo-parejas'}
                             />
                         </div>
                       </div>

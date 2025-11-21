@@ -238,6 +238,19 @@
           "Hot springs"
         ],
         "image": "promotion-group"
+      },
+      {
+        "id": "promo-parejas",
+        "title": "Couples Promotion",
+        "duration": "4 days / 3 nights",
+        "activities": [
+          "7 Lakes SUP Crossing",
+          "Horseback Riding",
+          "Hot Springs",
+          "Dark Tourism (Enchanted Forests)"
+        ],
+        "note": "Promotion valid until the end of the year!",
+        "image": "promotion-couples"
       }
     ]
   },

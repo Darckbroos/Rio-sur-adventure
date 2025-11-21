@@ -17,7 +17,7 @@ export const servicesData = [
       key: 'hot_springs',
       slug_es: 'termas',
       slug_en: 'hot-springs',
-      imageUrls: ['/servicios/termas1.jpg', '/servicios/termas2.jpg', '/servicios/termas3.jpg'],
+      imageUrls: ['/servicios/termas1.jpg?v=2', '/servicios/termas2.jpg', '/servicios/termas3.jpg'],
       icon: 'FaHotTub',
     },
     {
