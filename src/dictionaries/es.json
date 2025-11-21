@@ -61,17 +61,17 @@
           {
             "title": "Bautismo de Montaña: Ascenso al Filcumpulli",
             "description": "Inicia tu leyenda aquí. Conquista el mirador Filcumpulli y obtén una vista 360° de volcanes y lagos. Es el primer gran logro de tu viaje, perfecto para despertar el espíritu aventurero.",
-            "difficulty": "Iniciación"
+            "difficulty": "Moderado (Nivel 3)"
           },
           {
             "title": "Ascenso al Olimpo: Volcán Mocho-Choshuenco",
             "description": "Para los que no temen al cansancio y buscan la gloria. Una jornada épica hacia el techo de la región. Arriba, solo el viento, el silencio y un océano de cumbres a tus pies. Requiere coraje.",
-            "difficulty": "Legendario"
+            "difficulty": "Legendario (Nivel 4)"
           },
           {
             "title": "El Secreto del Bosque: Sendero de los Espíritus",
             "description": "Camina donde la magia es real. Un viaje a través de cascadas y esculturas místicas que susurran historias antiguas. No solo es caminar, es sentir la energía de la tierra mapuche.",
-            "difficulty": "Místico"
+            "difficulty": "Místico / Familiar (Nivel 1-2)"
           }
         ],
         "safety_title": "Tu Vida es la Misión",

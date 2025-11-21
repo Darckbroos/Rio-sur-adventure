@@ -56,17 +56,17 @@
           {
             "title": "Mountain Baptism: Ascent to Filcumpulli",
             "description": "Start your legend here. Conquer the Filcumpulli viewpoint and get a 360° view of volcanoes and lakes. It's the first great achievement of your journey, perfect for awakening the adventurous spirit.",
-            "difficulty": "Initiation"
+            "difficulty": "Moderate (Level 3)"
           },
           {
             "title": "Olympus Ascent: Mocho-Choshuenco Volcano",
             "description": "For those who do not fear fatigue and seek glory. An epic journey to the roof of the region. Up there, only the wind, silence, and an ocean of peaks at your feet. It requires courage.",
-            "difficulty": "Legendary"
+            "difficulty": "Legendary (Level 4)"
           },
           {
             "title": "The Secret of the Forest: Trail of the Spirits",
             "description": "Walk where magic is real. A journey through waterfalls and mystical sculptures that whisper ancient stories. It's not just walking; it's feeling the energy of the Mapuche land.",
-            "difficulty": "Mystical"
+            "difficulty": "Mystical / Family (Level 1-2)"
           }
         ],
         "safety_title": "Your Life is the Mission",
