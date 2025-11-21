@@ -24,7 +24,7 @@ export const servicesData = [
       key: 'downtown_tour',
       slug_es: 'tour-por-la-ciudad-y-alrededores',
       slug_en: 'city-and-surroundings-tour',
-      imageUrls: ['/servicios/tour.jpg', '/servicios/nosotros.jpg', '/servicios/senderismo3.jpg',], // Placeholder
+      imageUrls: ['/servicios/tour.jpg', '/servicios/tour3.jpg', '/servicios/tour4.jpg', '/servicios/tour5.jpg', '/servicios/tour6.jpg'],
       icon: 'FaCity',
     },
     {
