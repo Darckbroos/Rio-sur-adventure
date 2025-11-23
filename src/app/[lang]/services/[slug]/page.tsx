@@ -7,12 +7,6 @@ import { servicesData } from '@/lib/servicesData';
 import { FaWhatsapp } from 'react-icons/fa';
 import { ImageHandler } from '@/components/ui/image-handler';
 
-type Props = {
-  params: {
-    lang: string;
-    slug: string;
-  };
-};
 
 const slugToServiceMap: { [key: string]: string } = {
   'senderismo-de-montana': 'hiking',

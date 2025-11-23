@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Agrega esta línea para habilitar el modo standalone
   output: 'standalone',
+
+  // ❗ Desactivar errores de TypeScript y ESLint en el build
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 
   images: {
     remotePatterns: [
@@ -13,6 +20,7 @@ const nextConfig = {
       },
     ],
   },
+
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

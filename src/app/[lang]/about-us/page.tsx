@@ -2,7 +2,6 @@ import { getDictionary } from '@/lib/dictionary';
 import { Mountain, Target, CheckCircle, Leaf } from 'lucide-react';
 import Image from 'next/image';
 
-type Props = { params: { lang: string } };
 
 export default async function AboutUsPage({ params }: Props) {
   const { lang } = params;

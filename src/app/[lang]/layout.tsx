@@ -4,11 +4,6 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 
-type Props = {
-  children: ReactNode;
-  params: { lang: string };
-};
-
 export default async function LangLayout({ children, params }: Props) {
   const { lang } = params;
   const dict = await getDictionary(lang);

@@ -11,7 +11,6 @@ import HeroCarousel from '@/components/HeroCarousel';
 import { servicesData } from '@/lib/servicesData';
 import { ImageHandler } from '@/components/ui/image-handler';
 
-type Props = { params: { lang: string } };
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Waves,

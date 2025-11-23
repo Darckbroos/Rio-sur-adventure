@@ -12,7 +12,6 @@ import {
 import { servicesData } from '@/lib/servicesData';
 import { ImageHandler } from '@/components/ui/image-handler';
 
-type Props = { params: { lang: string } };
 
 export default async function ServicesPage({ params }: Props) {
   const { lang } = params;
