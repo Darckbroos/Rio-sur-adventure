@@ -5,12 +5,12 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { Suspense } from "react";
 
 type Props = {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export default async function ContactUsPage({ params, searchParams }: Props) {
-  const { lang } = params;
+  const { lang } = await params;
   const dict = await getDictionary(lang);
   const serviceName = (searchParams?.service as string) || "";
 
