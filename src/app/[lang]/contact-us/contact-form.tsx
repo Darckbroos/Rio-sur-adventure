@@ -65,6 +65,7 @@ export function ContactForm({ dict, serviceName }: Props) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const { toast } = useToast();
+  const searchParams = useSearchParams();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -82,12 +83,11 @@ export function ContactForm({ dict, serviceName }: Props) {
       form.setValue('message', message);
     }
     // Si viene como parámetro en la URL de una promoción
-    const searchParams = new URLSearchParams(window.location.search);
     const messageFromPromo = searchParams.get('message');
     if (messageFromPromo) {
         form.setValue('message', messageFromPromo);
     }
-  }, [serviceName, form, dict.predefined_email_message]);
+  }, [serviceName, form, dict.predefined_email_message, searchParams]);
 
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
