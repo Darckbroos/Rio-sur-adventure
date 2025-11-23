@@ -1,8 +1,7 @@
 
 'use client';
 
-import { useState, useEffect } from "react";
-import { useSearchParams } from 'next/navigation';
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -56,37 +55,23 @@ type Props = {
     dialog_success_close: string;
     toast_error_title: string;
     toast_error_description: string;
-    predefined_email_message: string;
   };
+  initialMessage?: string; // Prop para el mensaje inicial
 };
 
-export function ContactForm({ dict }: Props) {
+export function ContactForm({ dict, initialMessage = '' }: Props) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const { toast } = useToast();
-  const searchParams = useSearchParams();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       email: "",
-      message: "",
+      message: initialMessage, // Usar el mensaje inicial
     },
   });
-
-  useEffect(() => {
-    const serviceName = searchParams.get('service');
-    if (serviceName) {
-      const message = dict.predefined_email_message.replace('{serviceName}', decodeURIComponent(serviceName));
-      form.setValue('message', message);
-    }
-    const messageFromPromo = searchParams.get('message');
-    if (messageFromPromo) {
-        form.setValue('message', messageFromPromo);
-    }
-  }, [searchParams, form, dict.predefined_email_message]);
-
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
@@ -106,7 +91,7 @@ export function ContactForm({ dict }: Props) {
       }
 
       setShowSuccessDialog(true);
-      form.reset({ name: '', email: '', message: '' });
+      form.reset({ name: '', email: '', message: '' }); // Limpiar formulario después del éxito
 
     } catch (error: any) {
       toast({

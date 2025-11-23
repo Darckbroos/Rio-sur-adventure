@@ -8,12 +8,22 @@ export default async function ContactUsPage({
   params,
   searchParams,
 }: {
-  params?: { lang?: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  params: { lang: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  const lang = params?.lang || "es";
+  const lang = params.lang;
   const dict = await getDictionary(lang);
-  const serviceName = (searchParams?.service as string) || "";
+
+  // Determina el mensaje predefinido aquí, en el componente de servidor
+  const serviceName = searchParams?.service as string | undefined;
+  const messageFromPromo = searchParams?.message as string | undefined;
+  let initialMessage = '';
+
+  if (messageFromPromo) {
+    initialMessage = messageFromPromo;
+  } else if (serviceName) {
+    initialMessage = dict.contact.predefined_email_message.replace('{serviceName}', decodeURIComponent(serviceName));
+  }
 
   return (
     <div className="container mx-auto px-4 py-16">
@@ -29,7 +39,8 @@ export default async function ContactUsPage({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div className="bg-card p-8 rounded-lg shadow-lg">
           <Suspense fallback={<div>Loading form...</div>}>
-            <ContactForm dict={dict.contact} serviceName={serviceName} />
+            {/* Pasa el mensaje inicial como una prop al formulario */}
+            <ContactForm dict={dict.contact} initialMessage={initialMessage} />
           </Suspense>
         </div>
 
