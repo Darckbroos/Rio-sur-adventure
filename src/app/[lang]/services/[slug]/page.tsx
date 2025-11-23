@@ -8,10 +8,10 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { ImageHandler } from '@/components/ui/image-handler';
 
 type Props = {
-  params: Promise<{
+  params: {
     lang: string;
     slug: string;
-  }>;
+  };
 };
 
 const slugToServiceMap: { [key: string]: string } = {
@@ -37,7 +37,7 @@ const slugToServiceMap: { [key: string]: string } = {
 };
 
 export default async function ServiceDetailPage({ params }: Props) {
-  const { lang, slug } = await params;
+  const { lang, slug } = params;
 
   const dict = await getDictionary(lang);
   const serviceKey = slugToServiceMap[slug];

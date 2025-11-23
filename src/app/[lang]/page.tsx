@@ -11,7 +11,7 @@ import HeroCarousel from '@/components/HeroCarousel';
 import { servicesData } from '@/lib/servicesData';
 import { ImageHandler } from '@/components/ui/image-handler';
 
-type Props = { params: Promise<{ lang: string }> };
+type Props = { params: { lang: string } };
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Waves,
@@ -29,7 +29,7 @@ const iconComponents: { [key: string]: React.ElementType } = {
 const featuredServiceKeys = ['lake_expedition', 'hot_springs', 'rafting', 'night_tourism', 'canopy', 'hiking'];
 
 export default async function HomePage({ params }: Props) {
-  const { lang } = await params;
+  const { lang } = params;
   const dict = await getDictionary(lang);
 
   const allServices = servicesData.map(service => {

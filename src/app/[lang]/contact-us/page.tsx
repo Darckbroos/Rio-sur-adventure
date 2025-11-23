@@ -5,12 +5,12 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { Suspense } from "react";
 
 type Props = {
-  params: Promise<{ lang: string }>;
+  params: { lang: string };
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export default async function ContactUsPage({ params, searchParams }: Props) {
-  const { lang } = await params;
+  const { lang } = params;
   const dict = await getDictionary(lang);
   const serviceName = (searchParams?.service as string) || "";
 
@@ -28,7 +28,7 @@ export default async function ContactUsPage({ params, searchParams }: Props) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div className="bg-card p-8 rounded-lg shadow-lg">
           <Suspense fallback={<div>Loading form...</div>}>
-            <ContactForm dict={dict.contact} serviceName={serviceName} />
+            <ContactForm dict={dict.contact} />
           </Suspense>
         </div>
 

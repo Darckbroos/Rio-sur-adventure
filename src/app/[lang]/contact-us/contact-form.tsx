@@ -58,10 +58,9 @@ type Props = {
     toast_error_description: string;
     predefined_email_message: string;
   };
-  serviceName?: string;
 };
 
-export function ContactForm({ dict, serviceName }: Props) {
+export function ContactForm({ dict }: Props) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const { toast } = useToast();
@@ -77,17 +76,16 @@ export function ContactForm({ dict, serviceName }: Props) {
   });
 
   useEffect(() => {
-    // Si viene un serviceName como prop, lo usamos para el mensaje
+    const serviceName = searchParams.get('service');
     if (serviceName) {
       const message = dict.predefined_email_message.replace('{serviceName}', decodeURIComponent(serviceName));
       form.setValue('message', message);
     }
-    // Si viene como parámetro en la URL de una promoción
     const messageFromPromo = searchParams.get('message');
     if (messageFromPromo) {
         form.setValue('message', messageFromPromo);
     }
-  }, [serviceName, form, dict.predefined_email_message, searchParams]);
+  }, [searchParams, form, dict.predefined_email_message]);
 
 
   async function onSubmit(values: z.infer<typeof formSchema>) {

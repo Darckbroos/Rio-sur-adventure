@@ -6,12 +6,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button";
 
 type Props = {
   children: ReactNode;
-  // params ahora es un Promise
-  params: Promise<{ lang: string }>;
+  params: { lang: string };
 };
 
 export default async function LangLayout({ children, params }: Props) {
-  const { lang } = await params;
+  const { lang } = params;
   const dict = await getDictionary(lang);
 
   return (

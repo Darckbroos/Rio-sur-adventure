@@ -12,10 +12,10 @@ import {
 import { servicesData } from '@/lib/servicesData';
 import { ImageHandler } from '@/components/ui/image-handler';
 
-type Props = { params: Promise<{ lang: string }> };
+type Props = { params: { lang: string } };
 
 export default async function ServicesPage({ params }: Props) {
-  const { lang } = await params;
+  const { lang } = params;
   const dict = await getDictionary(lang);
 
   const services = servicesData.map(s => ({
