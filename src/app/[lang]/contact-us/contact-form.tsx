@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useEffect } from "react";
@@ -57,10 +58,10 @@ type Props = {
     toast_error_description: string;
     predefined_email_message: string;
   };
+  serviceName?: string;
 };
 
-export function ContactForm({ dict }: Props) {
-  const searchParams = useSearchParams();
+export function ContactForm({ dict, serviceName }: Props) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const { toast } = useToast();
@@ -75,12 +76,19 @@ export function ContactForm({ dict }: Props) {
   });
 
   useEffect(() => {
-    const serviceFromUrl = searchParams.get('service');
-    if (serviceFromUrl) {
-      const message = dict.predefined_email_message.replace('{serviceName}', decodeURIComponent(serviceFromUrl));
+    // Si viene un serviceName como prop, lo usamos para el mensaje
+    if (serviceName) {
+      const message = dict.predefined_email_message.replace('{serviceName}', decodeURIComponent(serviceName));
       form.setValue('message', message);
     }
-  }, [searchParams, form, dict.predefined_email_message]);
+    // Si viene como parámetro en la URL de una promoción
+    const searchParams = new URLSearchParams(window.location.search);
+    const messageFromPromo = searchParams.get('message');
+    if (messageFromPromo) {
+        form.setValue('message', messageFromPromo);
+    }
+  }, [serviceName, form, dict.predefined_email_message]);
+
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);

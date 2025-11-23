@@ -1,18 +1,18 @@
+
 import { getDictionary } from "@/lib/dictionary";
 import { ContactForm } from "./contact-form";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Suspense } from "react";
 
 type Props = {
-  params: Promise<{ lang: string }>;
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  params: { lang: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export default async function ContactUsPage({ params, searchParams }: Props) {
-  const { lang } = await params;
-  const sp = await searchParams;
+  const { lang } = params;
   const dict = await getDictionary(lang);
-  const serviceName = (sp.service as string) || "";
+  const serviceName = (searchParams?.service as string) || "";
 
   return (
     <div className="container mx-auto px-4 py-16">
