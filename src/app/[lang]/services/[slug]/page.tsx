@@ -1,3 +1,4 @@
+
 import { getDictionary } from '@/lib/dictionary';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -6,6 +7,52 @@ import { Button } from '@/components/ui/button';
 import { servicesData } from '@/lib/servicesData';
 import { FaWhatsapp } from 'react-icons/fa';
 import { ImageHandler } from '@/components/ui/image-handler';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: { lang: 'es' | 'en'; slug: string };
+};
+
+export async function generateMetadata({ params: { lang, slug } }: Props): Promise<Metadata> {
+  const dict = await getDictionary(lang);
+  const serviceKey = slugToServiceMap[slug];
+
+  if (!serviceKey) {
+    return {
+      title: 'Servicio no encontrado',
+    };
+  }
+
+  const serviceDetail = dict.services.details[serviceKey as keyof typeof dict.services.details] as any;
+  const serviceData = servicesData.find(s => s.key === serviceKey);
+  const imageUrl = serviceData?.imageUrls[0] || '/inicio/inicio.jpg';
+
+  return {
+    title: serviceDetail.title,
+    description: serviceDetail.description.substring(0, 160),
+    alternates: {
+      canonical: `/${lang}/services/${slug}`,
+      languages: {
+        es: `/es/services/${servicesData.find(s => s.key === serviceKey)?.slug_es}`,
+        en: `/en/services/${servicesData.find(s => s.key === serviceKey)?.slug_en}`,
+      },
+    },
+    openGraph: {
+      title: serviceDetail.title,
+      description: serviceDetail.description.substring(0, 160),
+      url: `/${lang}/services/${slug}`,
+      type: 'article',
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: `Imagen de ${serviceDetail.title}`,
+        },
+      ],
+    },
+  };
+}
 
 
 const slugToServiceMap: { [key: string]: string } = {
@@ -20,7 +67,7 @@ const slugToServiceMap: { [key: string]: string } = {
   'cabalgata': 'horseback_riding',
   'horseback-riding': 'horseback_riding',
   'rafting-de-aguas-blancas': 'rafting',
-  'whitewater-rafting': 'rafting',
+  'white-water-rafting': 'rafting',
   'renta-de-bicicleta': 'biking',
   'bike-rental': 'biking',
   'canopy': 'canopy',
@@ -73,8 +120,32 @@ export default async function ServiceDetailPage({ params }: Props) {
     return s && typeof s.safety_title === 'string' && typeof s.safety_description === 'string';
   }
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": service.title,
+    "description": service.description,
+    "image": images.map(img => `${baseUrl}${img}`),
+    "brand": {
+      "@type": "Brand",
+      "name": "Rio Sur Adventure"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `${baseUrl}/${lang}/services/${slug}`,
+      "priceCurrency": "CLP",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
+  const baseUrl = "https://riosuradventure.com";
+
   return (
     <div className="bg-muted/20 py-12 md:py-20">
+       <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+        />
       <div className="container mx-auto px-4">
         <Link href={`/${lang}/services`} className="inline-flex items-center text-primary hover:underline mb-8 font-semibold">
           <ArrowLeft className="mr-2 h-4 w-4" />
@@ -85,7 +156,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           {images.length > 0 && (
             <ImageHandler
               src={images[0]}
-              alt={`Imagen principal del servicio ${service.title}`}
+              alt={`Imagen principal del servicio ${service.title} en Panguipulli`}
               fill
               sizes="100vw"
               className="object-cover"
@@ -100,22 +171,22 @@ export default async function ServiceDetailPage({ params }: Props) {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2">
-            <div className="bg-card p-8 rounded-2xl shadow-lg">
+            <article className="bg-card p-8 rounded-2xl shadow-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">{service.description}</p>
               {hasNote(service) && (
                 <p className="text-md text-primary/80 italic mt-6 bg-primary/5 p-4 rounded-lg">{service.note}</p>
               )}
-            </div>
+            </article>
 
             {images.length > 2 && (
-              <div className="mt-12">
+              <section className="mt-12">
                 <h2 className="font-headline text-3xl font-bold mb-6">Galería de la Aventura</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {images.slice(1, 3).map((img, index) => (
                     <div key={index} className="relative h-64 bg-card/60 rounded-2xl shadow-lg overflow-hidden">
                       <ImageHandler
                         src={img}
-                        alt={`Galería de ${service.title} - Imagen ${index + 1}`}
+                        alt={`Galería de ${service.title} - Imagen ${index + 2}`}
                         fill
                         sizes="(max-width: 640px) 100vw, 50vw"
                         className="object-cover"
@@ -124,11 +195,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                     </div>
                   ))}
                 </div>
-              </div>
+              </section>
             )}
 
             {hasOptions(service) && (
-              <div className="mt-12">
+              <section className="mt-12">
                 <h2 className="font-headline text-3xl font-bold mb-6">{service.options_title || 'Opciones del Servicio'}</h2>
                 <div className="space-y-6">
                   {service.options.map((option: any, index: number) => (
@@ -157,11 +228,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                     </div>
                   ))}
                 </div>
-              </div>
+              </section>
             )}
 
             {hasSafety(service) && (
-              <div className="mt-12 bg-emerald-50 border-2 border-emerald-200 p-8 rounded-2xl shadow-lg">
+              <section className="mt-12 bg-emerald-50 border-2 border-emerald-200 p-8 rounded-2xl shadow-lg">
                 <h2 className="font-headline text-3xl font-bold mb-4 flex items-center text-emerald-800">
                   <ShieldCheck className="h-8 w-8 mr-3 text-emerald-500" />
                   {service.safety_title}
@@ -169,11 +240,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <p className="text-lg text-emerald-700 leading-relaxed pl-11">
                   {service.safety_description}
                 </p>
-              </div>
+              </section>
             )}
 
             {hasAttractions(service) && (
-              <div className="mt-12">
+              <section className="mt-12">
                 <h2 className="font-headline text-3xl font-bold mb-6">{service.attractions_title || 'Puntos de Interés'}</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {service.attractions.map((attraction: string, index: number) => (
@@ -182,11 +253,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                     </div>
                   ))}
                 </div>
-              </div>
+              </section>
             )}
           </div>
 
-          <div className="lg:col-span-1">
+          <aside className="lg:col-span-1">
             <div className="sticky top-24">
               <div className="bg-card p-6 rounded-2xl shadow-2xl">
                 <h3 className="font-headline text-2xl font-bold mb-5 text-center">¡Reserva tu Aventura!</h3>
@@ -195,7 +266,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <div className="relative h-48 rounded-xl overflow-hidden mb-6">
                     <ImageHandler
                       src={images[1]}
-                      alt={`Imagen lateral para ${service.title}`}
+                      alt={`Reservar el tour de ${service.title}`}
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
                       className="object-cover"
@@ -220,7 +291,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </div>

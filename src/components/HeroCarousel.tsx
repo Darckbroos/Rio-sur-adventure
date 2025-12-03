@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from 'next/image';
@@ -7,7 +8,11 @@ import image1 from '../../public/inicio/inicio.jpg';
 import image2 from '../../public/inicio/inicio3.jpg';
 import image3 from '../../public/inicio/inicio4.jpg';
 
-const images = [image1, image2, image3];
+const images = [
+  { src: image1, alt: 'Amanecer en un lago del sur de Chile con montañas de fondo' },
+  { src: image2, alt: 'Kayakistas remando en un río rodeado de naturaleza en Panguipulli' },
+  { src: image3, alt: 'Grupo de personas preparándose para una aventura de rafting' },
+];
 
 export default function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,11 +27,11 @@ export default function HeroCarousel() {
 
   return (
     <div className="relative h-full w-full">
-      {images.map((src, index) => (
+      {images.map((image, index) => (
         <Image
           key={index}
-          src={src}
-          alt={`Carrusel de imágenes de fondo #${index + 1}`}
+          src={image.src}
+          alt={image.alt}
           fill
           className={`object-cover transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           priority={index === 0}

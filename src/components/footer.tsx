@@ -1,8 +1,8 @@
+
 import { Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { Logo } from './logo';
 
-// Icono de TikTok como un componente SVG para mantener la consistencia
 const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -29,10 +29,10 @@ export function Footer({ dict }: Props) {
             <Logo />
           </div>
           <div className="flex space-x-6">
-            <Link href="https://www.instagram.com/riosuradventure?utm_source=qr&igsh=MWloMzQwYnEwYWVoNg%3D%3D" className="text-muted-foreground hover:text-primary">
+            <Link href="https://www.instagram.com/riosuradventure?utm_source=qr&igsh=MWloMzQwYnEwYWVoNg%3D%3D" aria-label="Instagram de Rio Sur Adventure" className="text-muted-foreground hover:text-primary">
               <Instagram className="h-6 w-6" />
             </Link>
-            <Link href="https://www.tiktok.com/@rio.sur.adventure" className="text-muted-foreground hover:text-primary">
+            <Link href="https://www.tiktok.com/@rio.sur.adventure" aria-label="TikTok de Rio Sur Adventure" className="text-muted-foreground hover:text-primary">
               <TikTokIcon className="h-6 w-6" />
             </Link>
           </div>

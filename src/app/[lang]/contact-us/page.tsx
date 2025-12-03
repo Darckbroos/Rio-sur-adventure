@@ -1,20 +1,45 @@
+
 import { getDictionary } from "@/lib/dictionary";
 import { ContactForm } from "./contact-form";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Suspense } from "react";
+import type { Metadata } from "next";
 
-// 🔧 FIX: Tipado compatible con Next.js 15
+type Props = {
+  params: { lang: 'es' | 'en' };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export async function generateMetadata({ params: { lang } }: Props): Promise<Metadata> {
+  const dict = await getDictionary(lang);
+  const title = dict.contact.title;
+  const description = dict.contact.description;
+
+  return {
+    title: title,
+    description: description,
+    alternates: {
+      canonical: `/${lang}/contact-us`,
+      languages: {
+        'es': '/es/contact-us',
+        'en': '/en/contact-us',
+      },
+    },
+    openGraph: {
+      title: title,
+      description: description,
+      url: `/${lang}/contact-us`,
+    },
+  };
+}
+
 export default async function ContactUsPage({
   params,
   searchParams,
-}: {
-  params: { lang: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-}) {
+}: Props) {
   const lang = params.lang;
   const dict = await getDictionary(lang);
 
-  // Determina el mensaje predefinido aquí, en el componente de servidor
   const serviceName = searchParams?.service as string | undefined;
   const messageFromPromo = searchParams?.message as string | undefined;
   let initialMessage = '';
@@ -27,24 +52,23 @@ export default async function ContactUsPage({
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <div className="text-center mb-12">
+      <header className="text-center mb-12">
         <h1 className="font-headline text-4xl md:text-5xl font-bold">
           {dict.contact.title}
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
           {dict.contact.description}
         </p>
-      </div>
+      </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div className="bg-card p-8 rounded-lg shadow-lg">
           <Suspense fallback={<div>Loading form...</div>}>
-            {/* Pasa el mensaje inicial como una prop al formulario */}
             <ContactForm dict={dict.contact} initialMessage={initialMessage} />
           </Suspense>
         </div>
 
-        <div className="space-y-8">
+        <section className="space-y-8">
           <h2 className="font-headline text-3xl font-semibold">
             {dict.contact.info_title}
           </h2>
@@ -86,7 +110,7 @@ export default async function ContactUsPage({
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

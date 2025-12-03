@@ -1,4 +1,5 @@
 
+
 import Link from 'next/link';
 import { getDictionary } from '@/lib/dictionary';
 import { Button } from '@/components/ui/button';
@@ -10,7 +11,34 @@ import { FaCity, FaHotTub, FaTree } from 'react-icons/fa';
 import HeroCarousel from '@/components/HeroCarousel';
 import { servicesData } from '@/lib/servicesData';
 import { ImageHandler } from '@/components/ui/image-handler';
+import type { Metadata } from 'next';
 
+type Props = {
+  params: { lang: 'es' | 'en' };
+};
+
+export async function generateMetadata({ params: { lang } }: Props): Promise<Metadata> {
+  const dict = await getDictionary(lang);
+
+  return {
+    title: {
+      absolute: 'Rio Sur Adventure | Turismo Aventura en Panguipulli, Chile'
+    },
+    description: dict.home.hero_subtitle,
+    alternates: {
+      canonical: `/${lang}`,
+      languages: {
+        'es': '/es',
+        'en': '/en',
+      },
+    },
+    openGraph: {
+      title: 'Rio Sur Adventure | Turismo Aventura en Panguipulli, Chile',
+      description: dict.home.hero_subtitle,
+      url: `/${lang}`,
+    },
+  };
+}
 
 const iconComponents: { [key: string]: React.ElementType } = {
   Waves,
@@ -33,20 +61,21 @@ export default async function HomePage({ params }: Props) {
 
   const allServices = servicesData.map(service => {
     const IconComponent = iconComponents[service.icon];
+    const title = dict.services[`${service.key}_title` as keyof typeof dict.services];
     return {
       ...service,
-      title: dict.services[`${service.key}_title` as keyof typeof dict.services],
+      title: title,
       description: dict.services[`${service.key}_description` as keyof typeof dict.services].substring(0, 100) + '...',
       icon: IconComponent ? <IconComponent className="h-10 w-10 text-primary" /> : null,
       imageUrl: service.imageUrls[0],
-      alt: `Imagen del servicio ${dict.services[`${service.key}_title` as keyof typeof dict.services]}`,
+      alt: `Servicio de ${title} en Panguipulli`,
     };
   });
 
   const featuredServices = allServices.filter(service => featuredServiceKeys.includes(service.key));
 
   return (
-    <div>
+    <main>
       {/* Hero Section with Carousel */}
       <section className="relative h-[60vh] md:h-[80vh] w-full">
         <HeroCarousel />
@@ -124,6 +153,6 @@ export default async function HomePage({ params }: Props) {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
