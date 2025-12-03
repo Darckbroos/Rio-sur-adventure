@@ -90,6 +90,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   const service = dict.services.details[serviceKey as keyof typeof dict.services.details] as any;
   const serviceData = servicesData.find(s => s.key === serviceKey);
   const images = serviceData?.imageUrls || [];
+  const baseUrl = "https://riosuradventure.com";
 
   const generateWhatsappLink = () => {
     const phone = dict.contact.info_phone.replace(/\D/g, '');
@@ -137,8 +138,6 @@ export default async function ServiceDetailPage({ params }: Props) {
       "availability": "https://schema.org/InStock"
     }
   };
-
-  const baseUrl = "https://riosuradventure.com";
 
   return (
     <div className="bg-muted/20 py-12 md:py-20">
