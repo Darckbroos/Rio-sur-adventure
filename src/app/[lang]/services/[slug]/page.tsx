@@ -22,14 +22,19 @@ export async function generateMetadata({ params: { lang, slug } }: Props): Promi
       title: 'Servicio no encontrado',
     };
   }
-
+  
   const serviceDetail = dict.services.details[serviceKey as keyof typeof dict.services.details] as any;
+  if (!serviceDetail) {
+    notFound();
+  }
+
   const serviceData = servicesData.find(s => s.key === serviceKey);
   const imageUrl = serviceData?.imageUrls[0] || '/inicio/inicio.jpg';
+  const description = serviceDetail.description || '';
 
   return {
     title: serviceDetail.title,
-    description: serviceDetail.description.substring(0, 160),
+    description: description.substring(0, 160),
     alternates: {
       canonical: `/${lang}/services/${slug}`,
       languages: {
@@ -39,7 +44,7 @@ export async function generateMetadata({ params: { lang, slug } }: Props): Promi
     },
     openGraph: {
       title: serviceDetail.title,
-      description: serviceDetail.description.substring(0, 160),
+      description: description.substring(0, 160),
       url: `/${lang}/services/${slug}`,
       type: 'article',
       images: [
@@ -79,6 +84,7 @@ const slugToServiceMap: { [key: string]: string } = {
 
 export default async function ServiceDetailPage({ params }: Props) {
   const { lang, slug } = params;
+  const baseUrl = "https://riosuradventure.com";
 
   const dict = await getDictionary(lang);
   const serviceKey = slugToServiceMap[slug];
@@ -90,7 +96,10 @@ export default async function ServiceDetailPage({ params }: Props) {
   const service = dict.services.details[serviceKey as keyof typeof dict.services.details] as any;
   const serviceData = servicesData.find(s => s.key === serviceKey);
   const images = serviceData?.imageUrls || [];
-  const baseUrl = "https://riosuradventure.com";
+  
+  if (!service) {
+    notFound();
+  }
 
   const generateWhatsappLink = () => {
     const phone = dict.contact.info_phone.replace(/\D/g, '');

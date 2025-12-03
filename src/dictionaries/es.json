@@ -43,6 +43,7 @@
     "kayaking_title": "Aventura en SUP",
     "kayaking_description": "Deslízate en silencio sobre lagos cristalinos en Stand Up Paddle. Conéctate con la flora y fauna acuática mientras remas a tu propio ritmo. Una actividad para encontrar la paz.",
     "view_details": "Ver Detalles",
+    "book_now": "Reservar Ahora",
     "back_to_services": "Volver a Servicios",
     "contact_for_booking": "Contactar para Agendar",
     "contact_by_email": "Contactar por Correo",
@@ -50,11 +51,7 @@
     "details": {
       "hiking": {
         "title": "CONQUISTA LA CUMBRE: Expediciones de Senderismo",
-        "description": [
-          "¿Sientes el llamado de la montaña? Esto no es un paseo por el parque. Es un desafío contra la gravedad, un diálogo con la roca y el viento.",
-          "Te guiaremos por senderos que se elevan hacia el cielo, donde el aire es más puro y tus pulmones arden con el esfuerzo. Cada paso es una victoria.",
-          "La recompensa: vistas que humillan a los mapas y una sensación de logro que llevarás contigo para siempre. Toca las nubes. Conquista tu cumbre."
-        ],
+        "description": "Esto no es un paseo por el parque. Es un desafío contra la gravedad, un diálogo con la roca y el viento. Te guiaremos por senderos que se elevan hacia el cielo, donde el aire es más puro y la recompensa son vistas que humillan a los mapas.",
         "options_title": "Elige tu Próxima Cumbre",
         "difficulty_label": "Nivel de Desafío",
         "options": [
@@ -79,37 +76,21 @@
       },
       "rafting": {
         "title": "DOMINA EL RÍO: Batalla de Rafting en Aguas Salvajes",
-        "description": [
-          "Olvídate de los paseos tranquilos. Esto es una guerra contra la furia del río. Sentirás el estruendo del agua, los golpes de las olas contra la balsa y la adrenalina pura bombeando en tus venas.",
-          "Rema como si tu vida dependiera de ello, porque lo hará. Trabaja en equipo, grita, ríe y lucha.",
-          "Saldrás del río diferente: más fuerte, más valiente, un verdadero conquistador de aguas bravas."
-        ],
+        "description": "Olvídate de los paseos tranquilos. Esto es una guerra contra la furia del río. Sentirás el estruendo del agua, los golpes de las olas contra la balsa y la adrenalina pura bombeando en tus venas. Rema como si tu vida dependiera de ello, porque lo hará. Trabaja en equipo, grita, ríe y lucha. Saldrás del río diferente: más fuerte, más valiente, un verdadero conquistador de aguas bravas.",
         "safety_title": "En la Furia del Agua, Somos tu Escudo",
         "safety_description": "El caos del río es nuestro campo de juego. Cada guía es un general de aguas bravas, certificado por la IRF y acompañado por kayakistas de élite que son tu sombra en el agua. El equipo es de grado militar, la charla de seguridad es un manifiesto de supervivencia. Aquí, la seguridad no es una promesa, es una obsesión."
       },
       "horseback_riding": {
         "title": "GALOPE A LA LIBERTAD: Expedición a Caballo",
-        "description": [
-          "Esto no es un paseo de ponis. Es sentir el poder de una bestia noble bajo tu control, galopando a través de praderas abiertas con el viento en la cara y la Cordillera como telón de fondo.",
-          "Eres un pionero, un explorador, reconquistando la Patagonia al ritmo del galope.",
-          "Al final del día, el olor a cuero y sudor se mezclará con el del fuego, mientras compartimos un asado campestre bajo las estrellas. Esto es libertad en su estado más puro."
-        ]
+        "description": "Esto no es un paseo de ponis. Es sentir el poder de una bestia noble bajo tu control, galopando a través de praderas abiertas con el viento en la cara y la Cordillera como telón de fondo. Eres un pionero, un explorador, reconquistando la Patagonia al ritmo del galope. Al final del día, el olor a cuero y sudor se mezclará con el del fuego, mientras compartimos un asado campestre bajo las estrellas. Esto es libertad en su estado más puro."
       },
       "kayaking": {
         "title": "SECRETOS DEL LAGO: Travesía Mística en SUP & Kayak",
-        "description": [
-          "El lago tiene secretos, y solo los revela a quienes se acercan en silencio. Deslízate sobre un espejo de agua, donde el único sonido es tu remo cortando la superficie.",
-          "Explora islas desiertas, playas a las que nadie más puede llegar y bahías donde la naturaleza sigue intacta. No es un ejercicio, es una meditación en movimiento, una conexión profunda con el alma acuática de Panguipulli.",
-          "Incluye un snack para recargar el cuerpo, porque el espíritu ya estará lleno."
-        ]
+        "description": "El lago tiene secretos, y solo los revela a quienes se acercan en silencio. Deslízate sobre un espejo de agua, donde el único sonido es tu remo cortando la superficie. Explora islas desiertas, playas a las que nadie más puede llegar y bahías donde la naturaleza sigue intacta. No es un ejercicio, es una meditación en movimiento, una conexión profunda con el alma acuática de Panguipulli. Incluye un snack para recargar el cuerpo, porque el espíritu ya estará lleno."
       },
       "lake_expedition": {
         "title": "ODISEA DE LOS 7 LAGOS: Travesía Épica por Aguas Ancestrales",
-        "description": [
-          "Esto no es un tour, es una saga. Una inmersión total en la ruta escénica que da fama mundial a esta tierra. Siente la inmensidad de los Andes reflejada en siete espejos de agua legendarios.",
-          "Navegarás, explorarás y conquistarás cada uno de ellos, descubriendo sus playas secretas, sus islas silenciosas y la energía única que emana de sus profundidades. Es un viaje al origen, al corazón líquido de la Patagonia.",
-          "Prepárate para una experiencia que redefinirá tu concepto de 'paisaje'."
-        ],
+        "description": "Esto no es un tour, es una saga. Una inmersión total en la ruta escénica que da fama mundial a esta tierra. Siente la inmensidad de los Andes reflejada en siete espejos de agua legendarios. Navegarás, explorarás y conquistarás cada uno de ellos, descubriendo sus playas secretas, sus islas silenciosas y la energía única que emana de sus profundidades. Es un viaje al origen, al corazón líquido de la Patagonia. Prepárate para una experiencia que redefinirá tu concepto de 'paisaje'.",
         "options_title": "LOS 7 ANILLOS DE AGUA: El Corazón de la Ruta",
         "options": [
           {
@@ -147,11 +128,7 @@
       },
       "hot_springs": {
         "title": "RENACER EN EL VOLCÁN: Inmersión en Termas Milenarias",
-        "description": [
-          "Esto no es un spa. Es un ritual. Sumérgete en aguas que nacen del corazón ardiente de la tierra, cargadas de minerales y energía volcánica.",
-          "Deja que el calor abrace tus músculos cansados y que el vapor limpie tu alma. Rodeado de bosques silenciosos y el murmullo del agua, sentirás cómo el mundo exterior se desvanece.",
-          "Saldrás renovado, renacido, listo para la próxima batalla."
-        ],
+        "description": "Esto no es un spa. Es un ritual. Sumérgete en aguas que nacen del corazón ardiente de la tierra, cargadas de minerales y energía volcánica. Deja que el calor abrace tus músculos cansados y que el vapor limpie tu alma. Rodeado de bosques silenciosos y el murmullo del agua, sentirás cómo el mundo exterior se desvanece. Saldrás renovado, renacido, listo para la próxima batalla.",
         "options_title": "Elige tu Santuario de Fuego y Agua",
         "options": [
           {
@@ -170,19 +147,11 @@
       },
       "canopy": {
         "title": "VUELA SOBRE EL FIN DEL MUNDO: Adrenalina en el Canopy",
-        "description": [
-          "¿Miedo a las alturas? ¡Perfecto! El canopy no es para volar, es para conquistar el vértigo.",
-          "Lánzate al vacío y vuela como un cóndor sobre el dosel del bosque, con el corazón en la garganta y una vista que te robará el aliento.",
-          "Es una dosis de adrenalina pura, una inyección de libertad que te dejará temblando de emoción. No solo verás el bosque, lo dominarás desde el cielo."
-        ]
+        "description": "¿Miedo a las alturas? ¡Perfecto! El canopy no es para volar, es para conquistar el vértigo. Lánzate al vacío y vuela como un cóndor sobre el dosel del bosque, con el corazón en la garganta y una vista que te robará el aliento. Es una dosis de adrenalina pura, una inyección de libertad que te dejará temblando de emoción. No solo verás el bosque, lo dominarás desde el cielo."
       },
        "night_tourism": {
         "title": "🔥 ATRÉVETE A VIVIR EL “DARK TURISMO” EN PANGUIPULLI 🔥",
-        "description": [
-          "💀 No es un simple tour… es una experiencia que te hará sentir vivo. 💀",
-          "¿Te atreves a cruzar la frontera entre lo real y lo desconocido? En Río Sur Adventure te invitamos a una travesía nocturna donde la adrenalina, el misterio y lo sobrenatural se mezclan con la magia del sur de Chile.",
-          "🌲 Bosques oscuros, cementerios bajo las estrellas, relatos que erizan la piel y fogatas que esconden secretos antiguos. Prepárate para vivir una noche que no olvidarás jamás."
-        ],
+        "description": "No es un simple tour, es una experiencia que te hará sentir vivo. ¿Te atreves a cruzar la frontera entre lo real y lo desconocido? En Río Sur Adventure te invitamos a una travesía nocturna donde la adrenalina, el misterio y lo sobrenatural se mezclan con la magia del sur de Chile. Bosques oscuros, cementerios bajo las estrellas, relatos que erizan la piel y fogatas que esconden secretos antiguos. Prepárate para vivir una noche que no olvidarás jamás.",
         "options_title": "🔥 ACTIVIDADES IMPERDIBLES:",
         "options": [
           {
@@ -211,11 +180,7 @@
       },
       "downtown_tour": {
         "title": "EL ALMA DE PANGUIPULLI: Un Viaje a la Cultura Local",
-        "description": [
-          "Cualquiera puede tomar una foto. Pocos pueden capturar el alma de un lugar. Te llevaremos más allá de las postales, a las calles donde late el corazón de Panguipulli.",
-          "Conocerás a los artesanos que hacen hablar a la madera, escucharás las leyendas que se esconden en sus muros y probarás los sabores auténticos que no aparecen en las guías turísticas.",
-          "No es un tour, es una inmersión cultural."
-        ],
+        "description": "Cualquiera puede tomar una foto. Pocos pueden capturar el alma de un lugar. Te llevaremos más allá de las postales, a las calles donde late el corazón de Panguipulli. Conocerás a los artesanos que hacen hablar a la madera, escucharás las leyendas que se esconden en sus muros y probarás los sabores auténticos que no aparecen en las guías turísticas. No es un tour, es una inmersión cultural.",
         "attractions_title": "Puntos de Conexión",
         "attractions": [
           "Casona Cultural: El epicentro del arte local.",
@@ -229,11 +194,7 @@
       },
       "biking": {
         "title": "TRAZA TU PROPIO MAPA: Aventura en Mountain Bike",
-        "description": [
-          "El asfalto es para los turistas. Nosotros preferimos el polvo y el barro. Te damos una máquina de guerra de dos ruedas y un mapa lleno de posibilidades. El resto depende de ti.",
-          "Siente el ardor en tus piernas mientras asciendes por senderos olvidados y la velocidad pura en descensos que pondrán a prueba tu coraje.",
-          "Esto no es un paseo. Es la libertad de conquistar la tierra a tu propio ritmo."
-        ],
+        "description": "El asfalto es para los turistas. Nosotros preferimos el polvo y el barro. Te damos una máquina de guerra de dos ruedas y un mapa lleno de posibilidades. El resto depende de ti. Siente el ardor en tus piernas mientras asciendes por senderos olvidados y la velocidad pura en descensos que pondrán a prueba tu coraje. Esto no es un paseo. Es la libertad de conquistar la tierra a tu propio ritmo.",
         "options_title": "Elige tu Territorio",
         "difficulty_label": "Nivel",
         "options": [
