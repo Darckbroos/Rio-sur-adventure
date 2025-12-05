@@ -48,6 +48,7 @@
     "back_to_services": "Back to Services",
     "contact_for_booking": "Contact for Booking",
     "contact_by_email": "Contact by Email",
+    "predefined_whatsapp_message": "Hello, Rio Sur Adventure team! 👋 I'm writing because I am very interested in your service: {serviceName}.\n\nI would like to receive complete information to plan my visit. I would appreciate it if you could detail the following:\n\n1.  **Availability and Schedules:** What dates and times do you have available for this service?\n2.  **Options and Levels:** Do you offer different modalities or levels of difficulty/duration for this activity?\n3.  **Rates:** What is the cost per person, and are there special rates for groups? (We are [NUMBER] people).\n4.  **Service Details:** What equipment is included, and what would we need to bring ourselves?\n\nI look forward to your prompt response to coordinate the adventure.\n\nThank you very much and best regards!",
     "details": {
       "hiking": {
         "title": "CONQUER THE SUMMIT: Hiking Expeditions",
@@ -196,8 +197,6 @@
       "canopy": {
         "title": "FLY OVER THE END OF THE WORLD: Adrenaline on the Canopy",
         "description": "Afraid of heights? Perfect! The canopy is not for flying, it's for conquering vertigo. Launch yourself into the void and fly like a condor over the forest canopy, with your heart in your throat and a view that will take your breath away. It is a dose of pure adrenaline, an injection of freedom that will leave you trembling with emotion. You will not only see the forest, you will dominate it from the sky.",
-        "options_title": "Choose Your Flight Level",
-        "options": [],
         "safety_title": "Your Safety, Our Priority",
         "safety_description": "Fly with complete confidence. We use state-of-the-art, internationally certified equipment (harnesses, helmets, pulleys, and carabiners). Our guides are experts trained in canopy operation and high-altitude rescue techniques. Before each flight, you will receive a detailed instructional briefing so that your only concern is to enjoy the ride."
       },
@@ -330,8 +329,7 @@
     "dialog_success_description": "Thank you for contacting us. We'll get back to you shortly.",
     "dialog_success_close": "Close",
     "toast_error_title": "Failed to send message",
-    "toast_error_description": "There was a problem with your request.",
-    "predefined_email_message": "Hello, Rio Sur Adventure team,\n\nI'm writing because I am very interested in your service: {serviceName}.\n\nI would like to receive complete information to plan my visit. I would appreciate it if you could detail the following:\n\n1.  **Availability and Schedules:** What dates and times do you have available for this service?\n2.  **Options and Levels:** Do you offer different modalities or levels of difficulty/duration for this activity?\n3.  **Rates:** What is the cost per person, and are there special rates for groups? (We are [NUMBER] people).\n4.  **Service Details:** What equipment is included, and what would we need to bring ourselves?\n\nI look forward to your prompt response to coordinate the adventure.\n\nThank you very much and best regards!"
+    "toast_error_description": "There was a problem with your request."
   },
   "footer": {
     "rights": "All rights reserved."
