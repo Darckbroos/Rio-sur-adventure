@@ -54,6 +54,7 @@
         "description": "Esto no es un paseo por el parque. Es un desafío contra la gravedad, un diálogo con la roca y el viento. Te guiaremos por senderos que se elevan hacia el cielo, donde el aire es más puro y la recompensa son vistas que humillan a los mapas.",
         "options_title": "Elige tu Próxima Cumbre",
         "difficulty_label": "Nivel de Desafío",
+        "view_on_map": "Ver en el mapa",
         "options": [
           {
             "title": "Bautismo de Montaña: Ascenso al Filcumpulli",
@@ -77,6 +78,29 @@
       "rafting": {
         "title": "DOMINA EL RÍO: Batalla de Rafting en Aguas Salvajes",
         "description": "Olvídate de los paseos tranquilos. Esto es una guerra contra la furia del río. Sentirás el estruendo del agua, los golpes de las olas contra la balsa y la adrenalina pura bombeando en tus venas. Rema como si tu vida dependiera de ello, porque lo hará. Trabaja en equipo, grita, ríe y lucha. Saldrás del río diferente: más fuerte, más valiente, un verdadero conquistador de aguas bravas.",
+        "options_title": "Elige tu Campo de Batalla",
+        "difficulty_label": "Dificultad",
+        "view_on_map": "Ver en el mapa",
+        "options": [
+          {
+            "title": "Río Fuy: Adrenalina Turquesa",
+            "description": "Navega las famosas aguas turquesas del Fuy, un río de clase mundial que te desafiará con rápidos intensos y corridas técnicas. Fluirás por cañones espectaculares, rodeado de la selva valdiviana. Es la joya de la corona del rafting en la región, ideal para aventureros que buscan llevar su emoción al siguiente nivel.",
+            "difficulty": "Clase III-IV (Intermedio/Avanzado)",
+            "map_url": "https://www.google.com/maps/place/R%C3%ADo+Fuy"
+          },
+          {
+            "title": "Río San Pedro: La Aventura Familiar",
+            "description": "Perfecto para principiantes o una aventura en familia. El San Pedro ofrece un recorrido emocionante con rápidos amigables y pozones para nadar y jugar. Es un viaje escénico y divertido, donde el trabajo en equipo se combina con la belleza sobrecogedora del paisaje lacustre. ¡Risas y adrenalina suave garantizadas!",
+            "difficulty": "Clase II-III (Principiante/Familiar)",
+            "map_url": "https://www.google.com/maps/place/R%C3%ADo+San+Pedro"
+          },
+          {
+            "title": "Río Enco: El Corredor Escondido",
+            "description": "Un tesoro oculto que conecta los lagos Panguipulli y Riñihue. El Enco ofrece una experiencia de rafting más íntima y salvaje, con rápidos sorprendentes y vistas privilegiadas a los volcanes. Es una ruta para quienes buscan explorar lugares menos transitados y sentir una conexión profunda con el entorno.",
+            "difficulty": "Clase III (Intermedio)",
+            "map_url": "https://www.google.com/maps/place/R%C3%ADo+Enco"
+          }
+        ],
         "safety_title": "En la Furia del Agua, Somos tu Escudo",
         "safety_description": "El caos del río es nuestro campo de juego. Cada guía es un general de aguas bravas, certificado por la IRF y acompañado por kayakistas de élite que son tu sombra en el agua. El equipo es de grado militar, la charla de seguridad es un manifiesto de supervivencia. Aquí, la seguridad no es una promesa, es una obsesión."
       },
@@ -147,7 +171,9 @@
       },
       "canopy": {
         "title": "VUELA SOBRE EL FIN DEL MUNDO: Adrenalina en el Canopy",
-        "description": "¿Miedo a las alturas? ¡Perfecto! El canopy no es para volar, es para conquistar el vértigo. Lánzate al vacío y vuela como un cóndor sobre el dosel del bosque, con el corazón en la garganta y una vista que te robará el aliento. Es una dosis de adrenalina pura, una inyección de libertad que te dejará temblando de emoción. No solo verás el bosque, lo dominarás desde el cielo."
+        "description": "¿Miedo a las alturas? ¡Perfecto! El canopy no es para volar, es para conquistar el vértigo. Lánzate al vacío y vuela como un cóndor sobre el dosel del bosque, con el corazón en la garganta y una vista que te robará el aliento. Es una dosis de adrenalina pura, una inyección de libertad que te dejará temblando de emoción. No solo verás el bosque, lo dominarás desde el cielo.",
+        "safety_title": "Tu Seguridad, Nuestra Prioridad",
+        "safety_description": "Vuela con total confianza. Utilizamos equipos de última generación con certificación internacional (arneses, cascos, poleas y mosquetones). Nuestros guías son expertos capacitados en operación de canopy y técnicas de rescate en altura. Antes de cada vuelo, recibirás una charla de instrucción detallada para que tu única preocupación sea disfrutar del paseo."
       },
        "night_tourism": {
         "title": "🔥 ATRÉVETE A VIVIR EL “DARK TURISMO” EN PANGUIPULLI 🔥",
