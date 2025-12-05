@@ -13,6 +13,28 @@ type Props = {
   params: { lang: 'es' | 'en'; slug: string };
 };
 
+const slugToServiceMap: { [key: string]: string } = {
+  'senderismo-de-montana': 'hiking',
+  'mountain-hiking': 'hiking',
+  'travesias-7-lagos': 'lake_expedition',
+  '7-lakes-crossing': 'lake_expedition',
+  'termas': 'hot_springs',
+  'hot-springs': 'hot_springs',
+  'tour-por-la-ciudad-y-alrededores': 'downtown_tour',
+  'city-and-surroundings-tour': 'downtown_tour',
+  'cabalgata': 'horseback_riding',
+  'horseback-riding': 'horseback_riding',
+  'rafting-de-aguas-blancas': 'rafting',
+  'white-water-rafting': 'rafting',
+  'renta-de-bicicleta': 'biking',
+  'bike-rental': 'biking',
+  'canopy': 'canopy',
+  'turismo-oscuro': 'night_tourism',
+  'dark-tourism': 'night_tourism',
+  'aventura-en-sup': 'kayaking',
+  'sup-adventure': 'kayaking',
+};
+
 export async function generateMetadata({ params: { lang, slug } }: Props): Promise<Metadata> {
   const dict = await getDictionary(lang);
   const serviceKey = slugToServiceMap[slug];
@@ -59,29 +81,6 @@ export async function generateMetadata({ params: { lang, slug } }: Props): Promi
   };
 }
 
-
-const slugToServiceMap: { [key: string]: string } = {
-  'senderismo-de-montana': 'hiking',
-  'mountain-hiking': 'hiking',
-  'travesias-7-lagos': 'lake_expedition',
-  '7-lakes-crossing': 'lake_expedition',
-  'termas': 'hot_springs',
-  'hot-springs': 'hot_springs',
-  'tour-por-la-ciudad-y-alrededores': 'downtown_tour',
-  'city-and-surroundings-tour': 'downtown_tour',
-  'cabalgata': 'horseback_riding',
-  'horseback-riding': 'horseback_riding',
-  'rafting-de-aguas-blancas': 'rafting',
-  'white-water-rafting': 'rafting',
-  'renta-de-bicicleta': 'biking',
-  'bike-rental': 'biking',
-  'canopy': 'canopy',
-  'turismo-oscuro': 'night_tourism',
-  'dark-tourism': 'night_tourism',
-  'aventura-en-sup': 'kayaking',
-  'sup-adventure': 'kayaking',
-};
-
 export default async function ServiceDetailPage({ params }: Props) {
   const { lang, slug } = params;
   const baseUrl = "https://riosuradventure.com";
@@ -118,7 +117,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   const emailUrl = generateEmailLink();
 
   function hasOptions(s: any): boolean {
-    return s && Array.isArray(s.options);
+    return s && Array.isArray(s.options) && s.options.length > 0;
   }
   function hasAttractions(s: any): boolean {
     return s && Array.isArray(s.attractions);
@@ -182,7 +181,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             <article className="bg-card p-8 rounded-2xl shadow-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">{service.description}</p>
               {hasNote(service) && (
-                <p className="text-md text-primary/80 italic mt-6 bg-primary/5 p-4 rounded-lg">{service.note}</p>
+                <div className="text-md text-primary/80 italic mt-6 bg-primary/5 p-4 rounded-lg">{service.note}</div>
               )}
             </article>
 
@@ -245,7 +244,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <ShieldCheck className="h-8 w-8 mr-3 text-emerald-500" />
                   {service.safety_title}
                 </h2>
-                <p className="text-lg text-emerald-700 leading-relaxed pl-11">
+                <p className="text-lg text-emerald-700 leading-relaxed pl-11 whitespace-pre-line">
                   {service.safety_description}
                 </p>
               </section>
@@ -305,3 +304,5 @@ export default async function ServiceDetailPage({ params }: Props) {
     </div>
   );
 }
+
+    

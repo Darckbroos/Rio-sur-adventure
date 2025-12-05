@@ -1,3 +1,4 @@
+
 {
   "navigation": {
     "home": "Home",
@@ -49,9 +50,11 @@
     "contact_by_email": "Contact by Email",
     "details": {
       "hiking": {
-        "title": "Hiking Circuits",
+        "title": "CONQUER THE SUMMIT: Hiking Expeditions",
+        "description": "This isn't a walk in the park. It's a challenge against gravity, a dialogue with rock and wind. We will guide you along trails that rise to the sky, where the air is purer and the reward is views that humble maps.",
         "options_title": "Choose Your Next Summit",
         "difficulty_label": "Challenge Level",
+        "view_on_map": "View on map",
         "options": [
           {
             "title": "Mountain Baptism: Ascent to Filcumpulli",
@@ -73,47 +76,80 @@
         "safety_description": "The mountain demands respect, and we give it. Our guides are WFR-certified guardians, equipped for any eventuality. Before each ascent, we conduct a safety oath. We leave nothing to chance. Your only concern will be to put one foot in front of the other."
       },
       "lake_expedition": {
-        "title": "Seven Lakes Exploration",
-        "description": "Our expeditions take place on the Panguipulli, Calafquén, Riñihue, Pirihueico, Neltume, Pellaifa, and Pullinque lakes. Live an unforgettable experience connecting with nature through sailing and on SUP boards. Enjoy the 7 lakes of the region!",
-        "note": "Note: The cost of the trip may vary depending on the distance from our operations center in Panguipulli."
-      },
-      "hot_springs": {
-        "title": "Thermal Circuits",
-        "options_title": "Service Options",
+        "title": "ODYSSEY OF THE 7 LAKES: Epic Journey through Ancestral Waters",
+        "description": "This isn't a tour; it's a saga. A total immersion into the scenic route that brings worldwide fame to this land. Feel the immensity of the Andes reflected in seven legendary mirrors of water. You will navigate, explore, and conquer each one, discovering its secret beaches, its silent islands, and the unique energy that emanates from its depths. It is a journey to the origin, to the liquid heart of Patagonia. Prepare for an experience that will redefine your concept of landscape.",
+        "options_title": "THE 7 RINGS OF WATER: The Heart of the Route",
         "options": [
           {
-            "title": "Geometric Hot Springs",
-            "description": "A work of art in the middle of nature. Wander its labyrinthine red wooden walkways and immerse yourself in thermal pools hidden in a wild ravine. A surreal experience that blends architecture and landscape."
+            "title": "Panguipulli Lake: The Spirit of the Puma",
+            "description": "The host. Its waters guard the city and reflect the Choshuenco volcano. It's the starting point, where the energy of the 'land of pumas' welcomes you."
           },
           {
-            "title": "Huilo Huilo Hot Springs",
-            "description": "In the heart of the Biological Reserve, these hot springs offer relaxation in a fairytale setting. Enjoy its indoor and outdoor pools while gazing at the majesty of the Patagonian forest."
+            "title": "Calafquén Lake: The Other Lake",
+            "description": "A paradise of beaches and picturesque towns. Its shared waters between Panguipulli and Villarrica are famous for their warmth and life-filled corners."
           },
           {
-            "title": "Vergara Hot Springs",
-            "description": "A rustic and charming secret. Surrounded by pristine nature, they invite you to an authentic experience. Feel the waters revitalize your body with the soothing sound of the nearby river as your soundtrack. Pure disconnection."
+            "title": "Riñihue Lake: The Place of the Colihue",
+            "description": "The quiet giant. The last great lake of the circuit, whose powerful waters shaped history with the 'Riñihuazo'. Today, it's a haven of peace and imposing nature."
           },
           {
-            "title": "El Rincón Hot Springs",
-            "description": "The perfect refuge for a total disconnection. With a family-friendly atmosphere and rustic pools, they are ideal for those seeking a direct, unpretentious contact with nature. A true corner of peace in the mountains."
+            "title": "Pirihueico Lake: Puddle of Snow",
+            "description": "The wildest and most untamed. A freshwater fjord encased between forested mountains that transports you to another era. Crossing it by ferry is an experience in itself."
+          },
+          {
+            "title": "Neltume Lake: The Rebel Soul",
+            "description": "Small in size, but giant in beauty and character. A lake of restless waters surrounded by the Valdivian jungle in its maximum expression."
+          },
+          {
+            "title": "Pellaifa Lake: Frost of the Frost",
+            "description": "The calm twin of Calafquén. A sanctuary for bird watching and connecting with the most serene nature, ideal for a break on a SUP or kayak."
+          },
+          {
+            "title": "Pullinque Lake: Eyes of the Devil",
+            "description": "The most mysterious. A lake intervened by the hand of man but which has not lost its charm. Its dark waters hide legends and reflect a breathtaking landscape."
+          }
+        ],
+        "note": "The cost of the trip may vary depending on the distance from our operations center in Panguipulli and the selected boats.",
+        "safety_title": "NAVIGATORS, NOT PASSENGERS",
+        "safety_description": "In these waters, you are part of the crew. Our guides are admirals of Patagonia, experts in rescue and meteorology. We equip you with the best and train you to be an autonomous explorer. Your safety is the compass that guides every paddle."
+      },
+      "hot_springs": {
+        "title": "REBIRTH IN THE VOLCANO: Immersion in Millennial Hot Springs",
+        "description": "This is not a spa. It's a ritual. Immerse yourself in waters born from the burning heart of the earth, loaded with minerals and volcanic energy. Let the heat embrace your tired muscles and the steam cleanse your soul. Surrounded by silent forests and the murmur of water, you will feel the outside world fade away. You will leave renewed, reborn, ready for the next battle.",
+        "options_title": "Choose your Sanctuary of Fire and Water",
+        "options": [
+          {
+            "title": "The Zen Labyrinth: Geometric Hot Springs",
+            "description": "An architectural masterpiece in the middle of nowhere. Walk along red footbridges suspended over a steaming stream and find your perfect pool. It's a surreal and profoundly healing experience."
+          },
+          {
+            "title": "The Wild Luxury: Huilo Huilo Hot Springs",
+            "description": "The perfect harmony between the comfort of a resort and the untamed beauty of the Patagonian jungle. Relax in style after a day of intense exploration."
+          },
+          {
+            "title": "The Origin: Vergara and El Rincón Hot Springs",
+            "description": "For purists. Rustic pools, healing mud, and the sound of the river as the only soundtrack. It is the thermal experience in its rawest and most authentic state."
           }
         ]
       },
       "downtown_tour": {
-        "title": "Local Culture and Tradition",
-        "description": "This tour will take you to know not only the center of Panguipulli but also the culture of artisans and local communities in towns like Coñaripe, Liquiñe, and Neltume. Discover the history and beauty of the lake area.",
-        "attractions_title": "Points of Interest",
+        "title": "THE SOUL OF PANGUIPULLI: A Journey into Local Culture",
+        "description": "Anyone can take a picture. Few can capture the soul of a place. We will take you beyond the postcards, to the streets where the heart of Panguipulli beats. You will meet the artisans who make the wood speak, you will hear the legends hidden in its walls, and you will taste the authentic flavors that do not appear in the tourist guides. It is not a tour, it is a cultural immersion.",
+        "attractions_title": "Points of Connection",
         "attractions": [
-          "Panguipulli Artisans' Fair",
-          "Panguipulli Waterfront and Pier",
-          "Visit to Mapuche communities",
-          "Neltume Wood Route",
-          "Beer Route"
+          "Casona Cultural: The epicenter of local art.",
+          "Panguipulli Pier: Where the lake tells its stories.",
+          "San Sebastián Church: Architecture that defies time.",
+          "Artisans' Fair: The place to find unique treasures.",
+          "Chocolate Factory: The sweet taste of Patagonia.",
+          "Cerro Pitrén Viewpoint: The city at your feet.",
+          "Beer Route: The artisanal flavor of the area."
         ]
       },
       "rafting": {
-        "title": "Whitewater Rafting: Conquer the Wild Rivers!",
-        "options_title": "Service Options",
+        "title": "DOMINATE THE RIVER: Whitewater Rafting Battle",
+        "description": "Forget about calm rides. This is a war against the fury of the river. You will feel the roar of the water, the crashing of the waves against the raft, and pure adrenaline pumping through your veins. Paddle as if your life depends on it, because it will. Work as a team, shout, laugh, and fight. You will leave the river a different person: stronger, braver, a true conqueror of whitewater.",
+        "options_title": "Choose your Battlefield",
         "difficulty_label": "Difficulty",
         "view_on_map": "View on map",
         "options": [
@@ -135,64 +171,72 @@
             "difficulty": "Class III (Intermediate)",
             "map_url": "https://www.google.com/maps/place/R%C3%ADo+Enco"
           }
-        ]
+        ],
+        "safety_title": "In the Fury of the Water, We Are Your Shield",
+        "safety_description": "The chaos of the river is our playground. Each guide is a whitewater general, certified by the IRF and accompanied by elite kayakers who are your shadow in the water. The equipment is military-grade, the safety talk is a survival manifesto. Here, safety is not a promise, it is an obsession."
       },
       "biking": {
-        "title": "Your Bike Adventure in Panguipulli",
-        "description": "Become the master of your own expedition. We provide you with a top-quality mountain bike and a helmet, and you decide where to go and for how long. We offer full-day or half-day rentals so your adventure fits your plans perfectly. Looking for a relaxed ride along the waterfront or a challenge on forest trails? The choice is yours.",
-        "options_title": "Rental Options",
+        "title": "CHART YOUR OWN MAP: Mountain Bike Adventure",
+        "description": "Asphalt is for tourists. We prefer dust and mud. We give you a two-wheeled war machine and a map full of possibilities. The rest is up to you. Feel the burn in your legs as you climb forgotten trails and the pure speed on descents that will test your courage. This is not a ride. It is the freedom to conquer the land at your own pace.",
+        "options_title": "Choose your Territory",
+        "difficulty_label": "Level",
         "options": [
           {
-            "title": "Full-Day Rental: Limitless Adventure",
-            "description": "You have the bike for the entire day. Ideal for in-depth exploration, reaching distant viewpoints, or combining several routes. The only limit is your energy!"
+            "title": "Lake Route: Scenic Beauty",
+            "description": "A route to enjoy the landscape without your legs hating you the next day. Panoramic views, secret beaches, and the lake breeze on your face.",
+            "difficulty": "Explorer"
           },
           {
-            "title": "Half-Day Rental: Efficient Exploration",
-            "description": "Perfect for a morning or afternoon getaway. You have enough time for a great ride, leaving you time for other activities. Maximum flexibility!"
+            "title": "The Titan's Challenge: Calafquén Lake Loop",
+            "description": "A one-day marathon for cyclists forged in steel. Asphalt, gravel, hellish climbs, and dizzying descents. Completing it is a badge of honor.",
+            "difficulty": "Titan"
           }
-        ],
-        "attractions_title": "Suggested Routes for Your Adventure",
-        "attractions": [
-          "Panguipulli Waterfront and Pier",
-          "Monje Peninsula and its beaches",
-          "Climb to Rucatrehua Viewpoint",
-          "Chauquén and Coz-Coz Beaches",
-          "Scenic Route to Coñaripe (for experts)"
         ]
       },
       "canopy": {
-        "title": "The Flight of the Condor Adventure",
-        "description": "Imagine being suspended in the air, right where only the condors dare to fly. Our canopy circuits invite you on an unforgettable journey through the canopy of the Valdivian rainforest. It's not just a zip line; it's an adrenaline shot, a lesson in ecology, and a whole new perspective on the forest. Feel the wind, hear nature's call, and let yourself be carried away by an emotion that will make you feel more alive than ever.",
+        "title": "FLY OVER THE END OF THE WORLD: Adrenaline on the Canopy",
+        "description": "Afraid of heights? Perfect! The canopy is not for flying, it's for conquering vertigo. Launch yourself into the void and fly like a condor over the forest canopy, with your heart in your throat and a view that will take your breath away. It is a dose of pure adrenaline, an injection of freedom that will leave you trembling with emotion. You will not only see the forest, you will dominate it from the sky.",
         "options_title": "Choose Your Flight Level",
-        "options": [
-          {
-            "title": "Family Circuit: Flight of the Chucao",
-            "description": "Ideal for starting your canopy adventure. A fun and safe tour with 5 lines of varying lengths and moderate heights. Perfect for enjoying with family, laughing out loud, and creating a lifelong memory. The little ones will feel like true explorers!"
-          },
-          {
-            "title": "Extreme Circuit: Flight of the Condor",
-            "description": "Designed for adrenaline lovers. This circuit features 8 lines, including longer, higher, and faster cables that cross small ravines and offer panoramic views of the lake and volcanoes. It's a challenge that will test your nerves and reward you with a feeling of absolute freedom."
-          }
-        ],
+        "options": [],
         "safety_title": "Your Safety, Our Priority",
         "safety_description": "Fly with complete confidence. We use state-of-the-art, internationally certified equipment (harnesses, helmets, pulleys, and carabiners). Our guides are experts trained in canopy operation and high-altitude rescue techniques. Before each flight, you will receive a detailed instructional briefing so that your only concern is to enjoy the ride."
       },
       "night_tourism": {
-        "title": "Dark Tourism Panguipulli – Where the Brave Meet.",
-        "description": "Get ready to live a night you will never forget. Dark forests, cemeteries under the stars, skin-crawling stories, and bonfires that hide ancient secrets. This isn't for everyone. It's for those who seek to feel, to vibrate, and to challenge the unknown.",
-        "attractions_title": "UNMISSABLE ACTIVITIES",
-        "attractions": [
-          "Horror stories and bonfire",
-          "Symbolic hunt",
-          "Stargazing in the cemetery",
-          "Paranormal experiences in the forest",
-          "Enigmatic stories"
+        "title": "🔥 DARE TO EXPERIENCE 'DARK TOURISM' IN PANGUIPULLI 🔥",
+        "description": "This is not a simple tour; it's an experience that will make you feel alive. Do you dare to cross the border between the real and the unknown? At Río Sur Adventure, we invite you to a nocturnal journey where adrenaline, mystery, and the supernatural blend with the magic of southern Chile. Dark forests, cemeteries under the stars, skin-crawling stories, and bonfires that hide ancient secrets. Get ready to live a night you will never forget.",
+        "options_title": "🔥 UNMISSABLE ACTIVITIES:",
+        "options": [
+          {
+            "title": "👻 Horror stories and bonfire",
+            "description": "When the sun goes down and the shadows lengthen, the fire is lit... and with it, the stories you'll never want to hear alone."
+          },
+          {
+            "title": "🏹 Symbolic hunt",
+            "description": "Feel the tension in the air, the sounds of the forest, and that feeling that... something is watching you."
+          },
+          {
+            "title": "🌌 Stargazing in the cemetery",
+            "description": "A moment of connection between the earthly and the eternal, where silence finds a voice."
+          },
+          {
+            "title": "🌫️ Paranormal experiences in the Panguipulli forest",
+            "description": "The inexplicable takes shape in the mist... do you dare to look?"
+          },
+          {
+            "title": "🕯️ Enigmatic stories",
+            "description": "Real accounts, unsolved mysteries, souls that still roam the paths of the south."
+          }
         ],
-        "note": "And to end the night… A huge party on the beach! Under the moon, with good music, fire, and drinks, you'll celebrate surviving a unique experience."
+        "safety_title": "And to end the night... A huge party on the beach!",
+        "safety_description": "Under the moon, with good music, fire, and drinks, you'll celebrate surviving a unique experience.\n\n💥 It's not for everyone. It's for those who seek to feel, to vibrate, and to challenge the unknown.\n\n🌑 Dark Tourism Panguipulli – Where the brave meet."
       },
       "horseback_riding": {
-        "title": "Horseback Riding Expedition",
-        "description": "This experience, led by our horseback riding guide, will transport you to a time before roaring engines. You will be immersed in the temperate rainforest of the Huilo-Huilo Biological Reserve and enjoy a natural shower from the misty waterfalls on the expedition. You will visit three key points of interest: the waterfalls, volcanic caves, and the trail of the spirits. This is a full-day activity for those who enjoy the peace of the forest and its surroundings."
+        "title": "GALLOP TO FREEDOM: Horseback Expedition",
+        "description": "This is not a pony ride. It's feeling the power of a noble beast under your control, galloping through open meadows with the wind in your face and the Andes as a backdrop. You are a pioneer, an explorer, reconquering Patagonia at a gallop. At the end of the day, the smell of leather and sweat will mix with that of the fire, as we share a country-style barbecue under the stars. This is freedom in its purest state."
+      },
+      "kayaking": {
+        "title": "LAKE SECRETS: Mystical Journey on SUP & Kayak",
+        "description": "The lake has secrets, and it only reveals them to those who approach in silence. Glide over a mirror of water, where the only sound is your paddle cutting the surface. Explore deserted islands, beaches no one else can reach, and bays where nature remains untouched. It's not an exercise, it's a moving meditation, a deep connection with the aquatic soul of Panguipulli. Includes a snack to recharge the body, because the spirit will already be full."
       }
     }
   },
@@ -278,7 +322,7 @@
     "info_label_address": "Address",
     "info_label_phone": "Phone",
     "info_label_email": "Email",
-    "info_address": "123 Adventure Lane, Patagonia, Chile",
+    "info_address": "Ernesto Wilhem 648",
     "info_phone": "+56932484165",
     "info_email": "aventura.sur.rsa@gmail.com",
     "whatsapp_tooltip": "Message us",
@@ -293,3 +337,5 @@
     "rights": "All rights reserved."
   }
 }
+
+    
